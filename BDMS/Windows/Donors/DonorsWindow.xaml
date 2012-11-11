@@ -1,0 +1,50 @@
+﻿<Window x:Class="Donors.DonorsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Title="Donors" Height="450" Width="1050" ResizeMode="CanMinimize">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/BDMSStyles;component/ControlStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <DockPanel>
+        <UniformGrid DockPanel.Dock="Top" Rows="1" Height="50">
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="viewDonorBtn" ToolTip="View or Refresh Donors" Click="viewDonorBtn_Click">View Donors</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="addDonorBtn" ToolTip="Add New Donor" Click="addDonorBtn_Click">Add Donor</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="editDonorBtn" ToolTip="Edit Selected Donor" Click="editDonorBtn_Click">Edit Donor</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="deleteDonorBtn" ToolTip="Delete Selected Donor" Click="deleteDonorBtn_Click">Delete Donor</Button>
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Bottom" Columns="7" Height="50">
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="okDonorBtn" ToolTip="Cancel" Click="okDonorBtn_Click">OK</Button>
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Top">
+
+            <ListView Name="donorView" ItemsSource="{Binding donorCollection}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="140" Header="Donor ID"  DisplayMemberBinding="{Binding id}"  />
+                        <GridViewColumn Width="200" Header="Name"  DisplayMemberBinding="{Binding name}"  />
+                        <GridViewColumn Width="80" Header="Blood Group"  DisplayMemberBinding="{Binding bloodGroup}"  />
+                        <GridViewColumn Width="120" Header="Date of Birth"  DisplayMemberBinding="{Binding dob}"  />
+                        <GridViewColumn Width="160" Header="Address"  DisplayMemberBinding="{Binding address}"  />
+                        <GridViewColumn Width="130" Header="Contact"  DisplayMemberBinding="{Binding phone}"  />
+                        <GridViewColumn Width="120" Header="Last Donate"  DisplayMemberBinding="{Binding lastDonateDate}"  />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+        </UniformGrid>
+    </DockPanel>
+</Window>

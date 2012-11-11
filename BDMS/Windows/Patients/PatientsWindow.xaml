@@ -1,0 +1,53 @@
+﻿<Window x:Class="Patients.PatientsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Title="Patients" Height="450" Width="1050">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/BDMSStyles;component/ControlStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <DockPanel>
+        <UniformGrid DockPanel.Dock="Top" Rows="1" Height="50">
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="registrationForBloodBtn" ToolTip="Registration For Blood" Click="registrationForBloodBtn_Click">Registration For Blood</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="viewRegisteredPatientsBtn" ToolTip="View or Refresh Registered Patients" Click="viewRegisteredPatientsBtn_Click">View Registered Patients</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="editRegisteredPatientsBtn" ToolTip="Edit Selected Details" Click="editRegisteredPatientsBtn_Click">Edit Registered Patients</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="deleteRegisteredPatientsBtn" ToolTip="Delete Selected Details" Click="deleteRegisteredPatientsBtn_Click">Delete Registered Patients</Button>
+            <!--<Button Style="{StaticResource smallControlBtnStyle}" Name="searchForBloodBtn" ToolTip="Search For Blood" Click="searchForBloodBtn_Click">Search For Blood</Button>-->
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Bottom" Columns="7" Height="50">
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="okPatientBtn" ToolTip="OK"  Click="okPatientBtn_Click">OK</Button>
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Top">
+
+            <ListView Name="patientView" ItemsSource="{Binding patientCollection}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="140" Header="Patient ID"  DisplayMemberBinding="{Binding id}"  />
+                        <GridViewColumn Width="200" Header="Name"  DisplayMemberBinding="{Binding name}"  />
+                        <GridViewColumn Width="80" Header="Blood Group"  DisplayMemberBinding="{Binding bloodGroup}"  />
+                        <GridViewColumn Width="40" Header="Age"  DisplayMemberBinding="{Binding age}"  />
+                        <GridViewColumn Width="160" Header="Address"  DisplayMemberBinding="{Binding address}"  />
+                        <GridViewColumn Width="130" Header="Contact"  DisplayMemberBinding="{Binding phone}"  />
+                        <GridViewColumn Width="120" Header="Admitted Address"  DisplayMemberBinding="{Binding admittedAddress}"  />
+                        <GridViewColumn Width="160" Header="Espected Date"  DisplayMemberBinding="{Binding expectedDate}"  />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+
+        </UniformGrid>
+    </DockPanel>
+</Window>

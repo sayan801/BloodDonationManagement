@@ -1,0 +1,47 @@
+﻿<Window x:Class="Funds.ExpenseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Title="Expense" Height="450" Width="1050">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/BDMSStyles;component/ControlStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <DockPanel>
+        <UniformGrid DockPanel.Dock="Top" Rows="1" Height="50">
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="viewExpenseBtn" ToolTip="View or Refresh Expenses" Click="viewExpenseBtn_Click">View Expenses</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="addExpenseBtn" ToolTip="Add New Expense" Click="addExpenseBtn_Click">Add Expense</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="editExpenseBtn" ToolTip="Edit Selected Expense" Click="editExpenseBtn_Click">Edit Expense</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="deleteExpenseBtn" ToolTip="Delete Selected Expense" Click="deleteExpenseBtn_Click">Delete Expense</Button>
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Bottom" Columns="7" Height="50">
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="okExpenseBtn" ToolTip="OK"  Click="okExpenseBtn_Click">OK</Button>
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Top">
+            <ListView Name="expenseView" ItemsSource="{Binding expenseCollection}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="140" Header="Expense ID"  DisplayMemberBinding="{Binding id}"  />
+                        <GridViewColumn Width="200" Header="Expense Purpose"  DisplayMemberBinding="{Binding purpose}"  />
+                        <GridViewColumn Width="80" Header="Date Of Expenses"  DisplayMemberBinding="{Binding doe}"  />
+                        <GridViewColumn Width="120" Header="Expensed By"  DisplayMemberBinding="{Binding expensed_by}"  />
+                        <GridViewColumn Width="160" Header="Expensed Amounts"  DisplayMemberBinding="{Binding amount}"  />
+                        
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </UniformGrid>
+    </DockPanel>
+</Window>

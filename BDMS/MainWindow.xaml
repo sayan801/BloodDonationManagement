@@ -1,0 +1,41 @@
+﻿<Window x:Class="BDMS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Blood Donor Management System" Height="505" Width="1160" Topmost="False" WindowState="Maximized" Icon="/BDMS;component/Images/BDMSicon.ico">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/BDMSStyles;component/ControlStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <DockPanel LastChildFill="True">
+        <Button Style="{StaticResource smallControlBtnStyle}" Name="loginBtn" ToolTip="Click to Login" Height="50" Width="250" DockPanel.Dock="Top" Click="loginBtn_Click">Login</Button>
+        <!--<Button Height="50" ToolTip = "Click to Login" Width="250" DockPanel.Dock="Top" Margin="10" Name="loginBtn" Background="#FF4982DB" BorderBrush="#FFC4C458" Foreground="#FFF9F9EC" FontWeight="Bold" Click="loginBtn_Click">Login</Button>-->
+        <DockPanel Name="mainDocPanel" IsEnabled="False">
+            <UniformGrid DockPanel.Dock="Right" Columns="1" Width="200">
+                <Button Style="{StaticResource smallControlBtnStyle}" ToolTip="Our Events" Click="eventsBtn_Click">Events</Button>
+                <Button Style="{StaticResource smallControlBtnStyle}" Name="calculatorBtn" ToolTip="Calculator" Click="calculatorBtn_Click">Calculator</Button>
+                <Button Style="{StaticResource smallControlBtnStyle}" Name="mobileSyncBtn" ToolTip="Get Info From Mobile" IsEnabled="False">Mobile Synchronisation</Button>
+                <Button Style="{StaticResource smallControlBtnStyle}" Name="webSyncBtn" ToolTip="Send Info To Web" IsEnabled="True" Click="webSyncBtn_Click">Web Synchronisation</Button>
+                <Button Style="{StaticResource smallControlBtnStyle}" Name="generateTestimonialBtn" ToolTip="Generate Testimonial" IsEnabled="True" Click="generateTestimonialBtn_Click">Generate Testimonial</Button>
+                <Button Style="{StaticResource smallControlBtnStyle}" Name="helpBtn" ToolTip="Happy To Help" Click="helpBtn_Click">Help</Button>
+                <Button Style="{StaticResource smallControlBtnStyle}" Name="closeBtn" ToolTip="Close This Apps" Click="closeBtn_Click">Close</Button>
+            </UniformGrid>
+            <UniformGrid DockPanel.Dock="LEFT" Columns="1"  Width="200">
+                <Button Style="{StaticResource smallControlBtnStyle}" Name="donorsBtn" ToolTip="Donor Details" Click="donorsBtn_Click">Donors</Button>
+                <Button Style="{StaticResource smallControlBtnStyle}" Name="patientsBtn" ToolTip="Patient Details" Click="patientsBtn_Click">Patients</Button>
+                <Button Style="{StaticResource smallControlBtnStyle}" Name="donorAssignmentBtn" ToolTip="Donor Assignment Details" Click="donorAssignmentBtn_Click">Donor Assignment</Button>
+                <Button Style="{StaticResource smallControlBtnStyle}" Name="membersBtn" ToolTip="Our Members" Click="membersBtn_Click">Members</Button>
+                <Button Style="{StaticResource smallControlBtnStyle}" Name="fundsBtn" ToolTip="Available Funds" Click="fundsBtn_Click">Funds</Button>
+                <Button Style="{StaticResource smallControlBtnStyle}" Name="toDoBtn" ToolTip="Things To Do" Click="toDoBtn_Click">To Do</Button>
+                <Button Style="{StaticResource smallControlBtnStyle}" Name="wellWisherBtn" ToolTip="Our Well Wishers" Click="wellWisherBtn_Click">Well Wishers</Button>
+            </UniformGrid>
+            <Image DockPanel.Dock="Top" Source="/BDMS;component/Images/GiveLifeBanner.jpg" Margin="30">
+
+            </Image>
+        </DockPanel>
+
+    </DockPanel>
+
+</Window>

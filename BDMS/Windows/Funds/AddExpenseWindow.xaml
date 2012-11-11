@@ -1,0 +1,40 @@
+﻿<Window x:Class="Funds.AddExpenseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AddExpenseWindow" Height="450" Width="1050">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/BDMSStyles;component/ControlStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <DockPanel>
+        <UniformGrid DockPanel.Dock="Bottom" Columns="5" Height="50">
+            <Label></Label>
+            <Button Name="submitAddExpenseBtn" Style="{StaticResource smallControlBtnStyle}" ToolTip="Submit" Click="submitAddExpenseBtn_Click">Submit</Button>
+            <Label></Label>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="cancelAddExpenseBtn" ToolTip="Cancel" Click="cancelAddExpenseBtn_Click">Cancel</Button>
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Top" Columns="4">
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Expense Purpose :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="expensePurposeTB"></TextBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Date Of Expenses :</Label>
+            <DatePicker Style="{StaticResource DatePickerStyle}" Name="dOEDatePicker"></DatePicker>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Expensed By :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="expensedByTB"></TextBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Expensed Amounts :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="expensedAmountsTB"></TextBox>
+            <Label></Label>
+        </UniformGrid>
+    </DockPanel>
+</Window>
+

@@ -1,0 +1,35 @@
+﻿<Window x:Class="BDMS.Windows.WebSync"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WebSync" Height="922" Width="840">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/BDMSStyles;component/ControlStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <DockPanel LastChildFill="True">
+        <UniformGrid Rows="1" DockPanel.Dock="Bottom" Height="50">
+            <Button   Style="{StaticResource smallControlBtnStyle}"  Name="registerDonorBtn" Click="registerDonorBtn_Click">Register Donor</Button>
+            <Button   Style="{StaticResource smallControlBtnStyle}"  Name="registerPatientBtn" Click="registerPatientBtn_Click" >Register Patient</Button>
+            <Button   Style="{StaticResource smallControlBtnStyle}"  Name="viewDonorBtn" Click="viewDonorBtn_Click" >View Donor</Button>
+            <Button   Style="{StaticResource smallControlBtnStyle}"  Name="viewPatientBtn" Click="viewPatientBtn_Click" >View Patient</Button>
+        </UniformGrid>
+        <WebBrowser Name="mainWb" Loaded="mainWb_Loaded"></WebBrowser>
+        <!--<TabControl  Name="tabControl1" VerticalAlignment="Top" DockPanel.Dock="Top" TabStripPlacement="Bottom">
+            <TabItem Header="Register Donor" Name="tabItem1">                         
+                        <WebBrowser Name="donorWb" Loaded="donorWb_Loaded"/>
+            </TabItem>
+            <TabItem Header="View Donors" Name="tabItem3">
+                <WebBrowser Name="viewDonorWb" Loaded="viewDonorWb_Loaded"/>
+            </TabItem>
+            <TabItem Header="Register Patient" Name="tabItem2">
+                <WebBrowser DockPanel.Dock="Top" Name="patientWb" Loaded="patientWb_Loaded"/>
+            </TabItem>
+            <TabItem Header="View Patients" Name="tabItem4">
+                <WebBrowser DockPanel.Dock="Top" Name="viewPatientWb" Loaded="viewPatientWb_Loaded"/>
+            </TabItem>
+        </TabControl>-->
+    </DockPanel>
+</Window>

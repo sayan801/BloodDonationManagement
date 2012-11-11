@@ -1,0 +1,50 @@
+﻿<Window x:Class="Events.EventsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Title="Events" Height="450" Width="1050">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/BDMSStyles;component/ControlStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <DockPanel>
+        <UniformGrid DockPanel.Dock="Top" Rows="1" Height="50">
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="viewUpcomingEventBtn" ToolTip="View or Refresh Upcoming Events" Click="viewUpcomingEventBtn_Click">View Upcoming Events</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="addUpcomingEventBtn" ToolTip="Add New Upcoming Event" Click="addUpcomingEventBtn_Click">Add Upcoming Event</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="editEventBtn" ToolTip="Edit Selected Event" Click="editEventBtn_Click">Edit Event</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="deleteEventBtn" ToolTip="Delete Selected Events" Click="deleteEventBtn_Click">Delete Event</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="previousEventsBtn" ToolTip="Previous Events" Click="previousEventsBtn_Click">Previous Events</Button>
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Bottom" Columns="7" Height="50">
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="okEventsBtn" ToolTip="OK"  Click="okEventsBtn_Click">OK</Button>
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Top">
+
+            <ListView Name="eventView" ItemsSource="{Binding eventCollection}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="200" Header="Event ID"  DisplayMemberBinding="{Binding eventId}"  />
+                        <GridViewColumn Width="200" Header="Event Title"  DisplayMemberBinding="{Binding eventTitle}"  />
+                        <GridViewColumn Width="140" Header="Date Of Event"  DisplayMemberBinding="{Binding eventDoe}"  />
+                        <GridViewColumn Width="180" Header="Venue"  DisplayMemberBinding="{Binding eventVenue}"  />
+                        <GridViewColumn Width="500" Header="Goal of Event"  DisplayMemberBinding="{Binding eventGoal}"  />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+
+        </UniformGrid>
+    </DockPanel>
+</Window>

@@ -1,0 +1,35 @@
+﻿<Window x:Class="Help.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Help" Height="450" Width="1050">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/BDMSStyles;component/ControlStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <DockPanel>
+        <UniformGrid DockPanel.Dock="Top" Rows="1" Height="50">
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="hospitalDoctorBloodBankBtn" ToolTip="All Hospital,Doctor and Blood-Bank" Click="hospitalDoctorBloodBankBtn_Click">Hospital/Doctor/Blood-Bank</Button>
+
+            <Button IsEnabled="False" Style="{StaticResource smallControlBtnStyle}" Name="changePasswordBtn" ToolTip="Change Password" Click="changePasswordBtn_Click">Change Password</Button>
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Bottom" Columns="7" Height="50">
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="okHelpBtn" ToolTip="OK"  Click="okHelpBtn_Click">OK</Button>
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Top">
+
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">about us</TextBlock>
+
+        </UniformGrid>
+    </DockPanel>
+</Window>
