@@ -1,0 +1,1 @@
+Blood Donation Management is a software for managing blood donation..
