@@ -1,1 +1,1 @@
-Blood Donation Management is a software for managing blood donation..
+Blood Donation Management is a software for managing blood donation..we all know that there is no substitute of blood.
