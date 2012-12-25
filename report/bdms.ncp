@@ -1,0 +1,1668 @@
+<Project>
+  <Name>Untitled</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Untitled</Name>
+    <Language>CSharp</Language>
+    <Entities />
+    <Relationships />
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>BDMS.exe</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>SearchForBloodWindow</Name>
+        <Access>Public</Access>
+        <Location left="1072" top="1413" />
+        <Size width="162" height="247" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">internal Button submitSearchForBloodBtn</Member>
+        <Member type="Field">internal Button cancelSearchForBloodBtn</Member>
+        <Member type="Field">internal ComboBox bloodGroupComboBox</Member>
+        <Member type="Field">internal DatePicker expectedDateDatePicker</Member>
+        <Member type="Field">internal TextBox locationBtn</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public SearchForBloodWindow()</Member>
+        <Member type="Method">private Void cancelSearchForBloodBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>EventsWindow</Name>
+        <Access>Public</Access>
+        <Location left="860" top="1413" />
+        <Size width="162" height="417" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;EventInfo&gt; _eventCollection</Member>
+        <Member type="Field">internal Button viewUpcomingEventBtn</Member>
+        <Member type="Field">internal Button addUpcomingEventBtn</Member>
+        <Member type="Field">internal Button editEventBtn</Member>
+        <Member type="Field">internal Button deleteEventBtn</Member>
+        <Member type="Field">internal Button previousEventsBtn</Member>
+        <Member type="Field">internal Button okEventsBtn</Member>
+        <Member type="Field">internal ListView eventView</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;EventInfo&gt; eventCollection { get; }</Member>
+        <Member type="Constructor">public EventsWindow()</Member>
+        <Member type="Method">private Void previousEventsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void addUpcomingEventBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void okEventsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void viewUpcomingEventBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void deleteEventBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private EventInfo GetSelectedItem()</Member>
+        <Member type="Method">private Void editEventBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AddUpcomingEventWindow</Name>
+        <Access>Public</Access>
+        <Location left="648" top="1413" />
+        <Size width="162" height="332" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String eventId</Member>
+        <Member type="Field">private Boolean isEdit</Member>
+        <Member type="Field">internal Button submitAddUpcomingEventBtn</Member>
+        <Member type="Field">internal Button cancelAddUpcomingEventBtn</Member>
+        <Member type="Field">internal TextBox eventTitleBtn</Member>
+        <Member type="Field">internal DatePicker dOEDatePicker</Member>
+        <Member type="Field">internal TextBox venueBtn</Member>
+        <Member type="Field">internal TextBox goalofEventBtn</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public AddUpcomingEventWindow(EventInfo info)</Member>
+        <Member type="Method">private Void cancelAddUpcomingEventBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void submitAddUpcomingEventBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private String GenerateId()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MainWindow</Name>
+        <Access>Public</Access>
+        <Location left="436" top="1413" />
+        <Size width="162" height="672" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Boolean LoggedIn</Member>
+        <Member type="Field">internal Button loginBtn</Member>
+        <Member type="Field">internal DockPanel mainDocPanel</Member>
+        <Member type="Field">internal Button calculatorBtn</Member>
+        <Member type="Field">internal Button mobileSyncBtn</Member>
+        <Member type="Field">internal Button webSyncBtn</Member>
+        <Member type="Field">internal Button generateTestimonialBtn</Member>
+        <Member type="Field">internal Button helpBtn</Member>
+        <Member type="Field">internal Button closeBtn</Member>
+        <Member type="Field">internal Button donorsBtn</Member>
+        <Member type="Field">internal Button patientsBtn</Member>
+        <Member type="Field">internal Button donorAssignmentBtn</Member>
+        <Member type="Field">internal Button membersBtn</Member>
+        <Member type="Field">internal Button fundsBtn</Member>
+        <Member type="Field">internal Button toDoBtn</Member>
+        <Member type="Field">internal Button wellWisherBtn</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public MainWindow()</Member>
+        <Member type="Method">private Void loginBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void LoginWindowObj_OnSucccesfulLogin(String returnMsg)</Member>
+        <Member type="Method">private Void donorsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void patientsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void membersBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void eventsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void calculatorBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void helpBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void closeBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void toDoBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void wellWisherBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void fundsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void donorAssignmentBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void webSyncBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void generateTestimonialBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CreateAccountWindow</Name>
+        <Access>Public</Access>
+        <Location left="224" top="1413" />
+        <Size width="162" height="298" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">internal Button createAccountSubmitBtn</Member>
+        <Member type="Field">internal Button canclcreateAccountBtn</Member>
+        <Member type="Field">internal TextBox fullNameBtn</Member>
+        <Member type="Field">internal ComboBox userTypeComboBox</Member>
+        <Member type="Field">internal TextBox userIdBtn</Member>
+        <Member type="Field">internal PasswordBox loginPasswordBox</Member>
+        <Member type="Field">internal TextBox addressdBtn</Member>
+        <Member type="Field">internal DatePicker dOBDatePicker</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public CreateAccountWindow()</Member>
+        <Member type="Method">private Void canclcreateAccountBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ExpenseWindow</Name>
+        <Access>Public</Access>
+        <Location left="12" top="1413" />
+        <Size width="162" height="383" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;ExpenseInfo&gt; _expenseCollection</Member>
+        <Member type="Field">internal Button viewExpenseBtn</Member>
+        <Member type="Field">internal Button addExpenseBtn</Member>
+        <Member type="Field">internal Button editExpenseBtn</Member>
+        <Member type="Field">internal Button deleteExpenseBtn</Member>
+        <Member type="Field">internal Button okExpenseBtn</Member>
+        <Member type="Field">internal ListView expenseView</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;ExpenseInfo&gt; expenseCollection { get; }</Member>
+        <Member type="Constructor">public ExpenseWindow()</Member>
+        <Member type="Method">private Void addExpenseBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void okExpenseBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void viewExpenseBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void deleteExpenseBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private ExpenseInfo GetSelectedItem()</Member>
+        <Member type="Method">private Void editExpenseBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>RegistrationForBloodWindow</Name>
+        <Access>Public</Access>
+        <Location left="1496" top="980" />
+        <Size width="162" height="383" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String patientId</Member>
+        <Member type="Field">private Boolean isEdit</Member>
+        <Member type="Field">internal Button submitRegistrationBtn</Member>
+        <Member type="Field">internal Button cancelRegistrationBtn</Member>
+        <Member type="Field">internal TextBox patientsNameTB</Member>
+        <Member type="Field">internal TextBox addressdTB</Member>
+        <Member type="Field">internal ComboBox bloodGroupComboBox</Member>
+        <Member type="Field">internal TextBox ageTB</Member>
+        <Member type="Field">internal DatePicker expectedDateDatePicker</Member>
+        <Member type="Field">internal TextBox admittedAddressTB</Member>
+        <Member type="Field">internal TextBox contactNoBtn</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public RegistrationForBloodWindow(PatientInfo info)</Member>
+        <Member type="Method">private Void cancelRegistrationBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void submitRegistrationBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private String GenerateId()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>LoginWindow</Name>
+        <Access>Public</Access>
+        <Location left="1284" top="980" />
+        <Size width="162" height="281" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">internal Button loginSubmitBtn</Member>
+        <Member type="Field">internal Button cancleloginBtn</Member>
+        <Member type="Field">internal TextBox userIdBtn</Member>
+        <Member type="Field">internal PasswordBox loginPasswordBox</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Event">public event delegateOnSucccesfulLogin OnSucccesfulLogin</Member>
+        <Member type="Constructor">public LoginWindow()</Member>
+        <Member type="Method">private Void createAccountBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void cancleloginBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void loginSubmitBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>HospitalDoctorBloodBankWindow</Name>
+        <Access>Public</Access>
+        <Location left="1072" top="980" />
+        <Size width="162" height="383" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;HdbbInfo&gt; _hdbbCollection</Member>
+        <Member type="Field">internal Button viewDetailsBtn</Member>
+        <Member type="Field">internal Button addHospitalDoctorBloodBankBtn</Member>
+        <Member type="Field">internal Button editDetailsBtn</Member>
+        <Member type="Field">internal Button deleteDetailsBtn</Member>
+        <Member type="Field">internal Button okHDBBBtn</Member>
+        <Member type="Field">internal ListView hdbbView</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;HdbbInfo&gt; hdbbCollection { get; }</Member>
+        <Member type="Constructor">public HospitalDoctorBloodBankWindow()</Member>
+        <Member type="Method">private Void addHospitalDoctorBloodBankBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void okHDBBBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void viewDetailsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void deleteDetailsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private HdbbInfo GetSelectedItem()</Member>
+        <Member type="Method">private Void editDetailsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Testimonial</Name>
+        <Access>Public</Access>
+        <Location left="860" top="980" />
+        <Size width="162" height="349" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">internal Label label1</Member>
+        <Member type="Field">internal Label label2</Member>
+        <Member type="Field">internal Label label3</Member>
+        <Member type="Field">internal Label label4</Member>
+        <Member type="Field">internal Label labeffl4</Member>
+        <Member type="Field">internal Label labefsvdfl4</Member>
+        <Member type="Field">internal Label labefsvffdfl4</Member>
+        <Member type="Field">internal TextBox textBox1</Member>
+        <Member type="Field">internal ComboBox bloodGroupComboBox</Member>
+        <Member type="Field">internal DatePicker datePicker1</Member>
+        <Member type="Field">internal Button button1</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public Testimonial()</Member>
+        <Member type="Method">private Void button1_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>DonorDetailsWindow</Name>
+        <Access>Public</Access>
+        <Location left="648" top="980" />
+        <Size width="162" height="366" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String donorId</Member>
+        <Member type="Field">private Boolean isEdit</Member>
+        <Member type="Field">internal Button submitAddDonorBtn</Member>
+        <Member type="Field">internal Button cancelAddDonorBtn</Member>
+        <Member type="Field">internal TextBox donorsNameTb</Member>
+        <Member type="Field">internal ComboBox bloodGroupComboBox</Member>
+        <Member type="Field">internal DatePicker dOBDatePicker</Member>
+        <Member type="Field">internal TextBox addressdBtn</Member>
+        <Member type="Field">internal TextBox contactNoTB</Member>
+        <Member type="Field">internal DatePicker lastDonationDatePicker</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public DonorDetailsWindow(DonorInfo info)</Member>
+        <Member type="Method">private Void cancelAddDonorBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void submitAddDonorBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private String GenerateId()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>App</Name>
+        <Access>Public</Access>
+        <Location left="436" top="980" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public App()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">public static Void Main()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PreviousEventsWindow</Name>
+        <Access>Public</Access>
+        <Location left="224" top="980" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public PreviousEventsWindow()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>DonorsWindow</Name>
+        <Access>Public</Access>
+        <Location left="12" top="980" />
+        <Size width="162" height="383" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;DonorInfo&gt; _donorCollection</Member>
+        <Member type="Field">internal Button viewDonorBtn</Member>
+        <Member type="Field">internal Button addDonorBtn</Member>
+        <Member type="Field">internal Button editDonorBtn</Member>
+        <Member type="Field">internal Button deleteDonorBtn</Member>
+        <Member type="Field">internal Button okDonorBtn</Member>
+        <Member type="Field">internal ListView donorView</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;DonorInfo&gt; donorCollection { get; }</Member>
+        <Member type="Constructor">public DonorsWindow()</Member>
+        <Member type="Method">private Void addDonorBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void okDonorBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void viewDonorBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void deleteDonorBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private DonorInfo GetSelectedItem()</Member>
+        <Member type="Method">private Void editDonorBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AddHospitalDoctorBloodBankWindow</Name>
+        <Access>Public</Access>
+        <Location left="1496" top="479" />
+        <Size width="162" height="349" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String hdbbId</Member>
+        <Member type="Field">private Boolean isEdit</Member>
+        <Member type="Field">internal Button submitAddHospitalDoctorBloodBankBtn</Member>
+        <Member type="Field">internal Button cancelAddHospitalDoctorBloodBankBtn</Member>
+        <Member type="Field">internal ComboBox typeComboBox</Member>
+        <Member type="Field">internal TextBox nameTB</Member>
+        <Member type="Field">internal TextBox addressTB</Member>
+        <Member type="Field">internal TextBox contactNoTB</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public AddHospitalDoctorBloodBankWindow(HdbbInfo info)</Member>
+        <Member type="Method">private Void cancelAddHospitalDoctorBloodBankBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void submitAddHospitalDoctorBloodBankBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private String GenerateId()</Member>
+        <Member type="Method">private Void contactNoTB_TextChanged(Object sender, TextChangedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PatientsWindow</Name>
+        <Access>Public</Access>
+        <Location left="1284" top="479" />
+        <Size width="162" height="400" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;PatientInfo&gt; _patientCollection</Member>
+        <Member type="Field">internal Button registrationForBloodBtn</Member>
+        <Member type="Field">internal Button viewRegisteredPatientsBtn</Member>
+        <Member type="Field">internal Button editRegisteredPatientsBtn</Member>
+        <Member type="Field">internal Button deleteRegisteredPatientsBtn</Member>
+        <Member type="Field">internal Button okPatientBtn</Member>
+        <Member type="Field">internal ListView patientView</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;PatientInfo&gt; patientCollection { get; }</Member>
+        <Member type="Constructor">public PatientsWindow()</Member>
+        <Member type="Method">private Void registrationForBloodBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void searchForBloodBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void okPatientBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void viewRegisteredPatientsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void deleteRegisteredPatientsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private PatientInfo GetSelectedItem()</Member>
+        <Member type="Method">private Void editRegisteredPatientsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>WebSync</Name>
+        <Access>Public</Access>
+        <Location left="1072" top="479" />
+        <Size width="162" height="315" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">internal Button registerDonorBtn</Member>
+        <Member type="Field">internal Button registerPatientBtn</Member>
+        <Member type="Field">internal Button viewDonorBtn</Member>
+        <Member type="Field">internal Button viewPatientBtn</Member>
+        <Member type="Field">internal WebBrowser mainWb</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public WebSync()</Member>
+        <Member type="Method">private Void registerDonorBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void registerPatientBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void viewDonorBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void viewPatientBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void mainWb_Loaded(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>WellWishersWindow</Name>
+        <Access>Public</Access>
+        <Location left="860" top="479" />
+        <Size width="162" height="383" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;WellWisherInfo&gt; _WellWisherCollection</Member>
+        <Member type="Field">internal Button viewWellWishersBtn</Member>
+        <Member type="Field">internal Button addWellWisherBtn</Member>
+        <Member type="Field">internal Button editWellWishersBtn</Member>
+        <Member type="Field">internal Button deleteWellWishersBtn</Member>
+        <Member type="Field">internal Button okWellWishersBtn</Member>
+        <Member type="Field">internal ListView WellWisherView</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;WellWisherInfo&gt; WellWisherCollection { get; }</Member>
+        <Member type="Constructor">public WellWishersWindow()</Member>
+        <Member type="Method">private Void okWellWishersBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void addWellWisherBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void viewWellWishersBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void deleteWellWishersBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private WellWisherInfo GetSelectedItem()</Member>
+        <Member type="Method">private Void editWellWishersBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ChangePasswordWindow</Name>
+        <Access>Public</Access>
+        <Location left="648" top="479" />
+        <Size width="162" height="247" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">internal Button submitChangePasswordBtn</Member>
+        <Member type="Field">internal Button cancelChangePasswordBtn</Member>
+        <Member type="Field">internal PasswordBox currentPasswordPasswordBox</Member>
+        <Member type="Field">internal PasswordBox enterNewPasswordPasswordBox</Member>
+        <Member type="Field">internal PasswordBox reEnterNewPasswordPasswordBox</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public ChangePasswordWindow()</Member>
+        <Member type="Method">private Void cancelChangePasswordBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>FundsWindow</Name>
+        <Access>Public</Access>
+        <Location left="436" top="479" />
+        <Size width="162" height="451" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;FundInfo&gt; _fundCollection</Member>
+        <Member type="Field">internal Button viewFundBtn</Member>
+        <Member type="Field">internal Button addFundBtn</Member>
+        <Member type="Field">internal Button editFundBtn</Member>
+        <Member type="Field">internal Button deleteFundBtn</Member>
+        <Member type="Field">internal Button expenseBtn</Member>
+        <Member type="Field">internal Button availableFundBtn</Member>
+        <Member type="Field">internal TextBox viewAvailableFundTB</Member>
+        <Member type="Field">internal Button okReportsBtn</Member>
+        <Member type="Field">internal ListView fundView</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;FundInfo&gt; fundCollection { get; }</Member>
+        <Member type="Constructor">public FundsWindow()</Member>
+        <Member type="Method">private Void okReportsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void addFundBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void expenseBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void viewFundBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void deleteFundBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private FundInfo GetSelectedItem()</Member>
+        <Member type="Method">private Void editFundBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AddFundWindow</Name>
+        <Access>Public</Access>
+        <Location left="224" top="479" />
+        <Size width="162" height="434" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;WellWisherInfo&gt; _WellWisherCollection</Member>
+        <Member type="Field">private ObservableCollection&lt;MemberInfo&gt; _memberCollection</Member>
+        <Member type="Field">private String fundId</Member>
+        <Member type="Field">private Boolean isEdit</Member>
+        <Member type="Field">internal Button submitAddFundBtn</Member>
+        <Member type="Field">internal Button cancelAddExpenseBtn</Member>
+        <Member type="Field">internal ComboBox well_wisher_name</Member>
+        <Member type="Field">internal TextBox contactNoTB</Member>
+        <Member type="Field">internal DatePicker dODDatePicker</Member>
+        <Member type="Field">internal ComboBox receivedByComboBox</Member>
+        <Member type="Field">internal TextBox amountsTB</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;WellWisherInfo&gt; WellWisherCollection { get; }</Member>
+        <Member type="Property">public ObservableCollection&lt;MemberInfo&gt; memberCollection { get; }</Member>
+        <Member type="Constructor">public AddFundWindow(FundInfo info)</Member>
+        <Member type="Method">private Void cancelAddExpenseBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void submitAddFundBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private String GenerateId()</Member>
+        <Member type="Method">private Void Window_Loaded(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ToDoWindow</Name>
+        <Access>Public</Access>
+        <Location left="12" top="479" />
+        <Size width="162" height="417" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;TodoInfo&gt; _todoCollection</Member>
+        <Member type="Field">internal Button viewToDoBtn</Member>
+        <Member type="Field">internal TextBox detailsTB</Member>
+        <Member type="Field">internal Button addToDoBtn</Member>
+        <Member type="Field">internal Button editToDoBtn</Member>
+        <Member type="Field">internal Button deleteToDoBtn</Member>
+        <Member type="Field">internal Button okToDoBtn</Member>
+        <Member type="Field">internal ListView todoListView</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;TodoInfo&gt; todoCollection { get; }</Member>
+        <Member type="Constructor">public ToDoWindow()</Member>
+        <Member type="Method">private Void okToDoBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void addToDoBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private String GenerateId()</Member>
+        <Member type="Method">private Void todoListView_SelectionChanged(Object sender, SelectionChangedEventArgs e)</Member>
+        <Member type="Method">private Void viewToDoBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void deleteToDoBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private TodoInfo GetSelectedItem()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MembersWindow</Name>
+        <Access>Public</Access>
+        <Location left="1496" top="12" />
+        <Size width="162" height="383" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;MemberInfo&gt; _memberCollection</Member>
+        <Member type="Field">internal Button viewMembersBtn</Member>
+        <Member type="Field">internal Button addMemberBtn</Member>
+        <Member type="Field">internal Button editMemberBtn</Member>
+        <Member type="Field">internal Button deleteMemberBtn</Member>
+        <Member type="Field">internal Button okMembersBtn</Member>
+        <Member type="Field">internal ListView memberView</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;MemberInfo&gt; memberCollection { get; }</Member>
+        <Member type="Constructor">public MembersWindow()</Member>
+        <Member type="Method">private Void addMemberBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void okMembersBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void viewMembersBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void deleteMemberBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private MemberInfo GetSelectedItem()</Member>
+        <Member type="Method">private Void editMemberBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>DonorAssignmentDetails</Name>
+        <Access>Public</Access>
+        <Location left="1284" top="12" />
+        <Size width="162" height="315" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;PatientInfo&gt; _patientCollection</Member>
+        <Member type="Field">internal Button viewDetailssBtn</Member>
+        <Member type="Field">internal Button assignDonorBtn</Member>
+        <Member type="Field">internal Button okBtn</Member>
+        <Member type="Field">internal ListView assignedDonorView</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;PatientInfo&gt; patientCollection { get; }</Member>
+        <Member type="Constructor">public DonorAssignmentDetails()</Member>
+        <Member type="Method">private Void okBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void viewDetailssBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void assignDonorBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private PatientInfo GetSelectedItem()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>HelpWindow</Name>
+        <Access>Public</Access>
+        <Location left="1072" top="12" />
+        <Size width="162" height="247" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">internal Button hospitalDoctorBloodBankBtn</Member>
+        <Member type="Field">internal Button changePasswordBtn</Member>
+        <Member type="Field">internal Button okHelpBtn</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public HelpWindow()</Member>
+        <Member type="Method">private Void changePasswordBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void hospitalDoctorBloodBankBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void okHelpBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AssignDonor</Name>
+        <Access>Public</Access>
+        <Location left="860" top="12" />
+        <Size width="162" height="417" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;DonorInfo&gt; _donorCollection</Member>
+        <Member type="Field">internal Button submitRegistrationBtn</Member>
+        <Member type="Field">internal Button cancelRegistrationBtn</Member>
+        <Member type="Field">internal TextBox patientsIdTB</Member>
+        <Member type="Field">internal TextBox patientsNameTB</Member>
+        <Member type="Field">internal TextBox bloodGroup</Member>
+        <Member type="Field">internal TextBox expectedDate</Member>
+        <Member type="Field">internal TextBox admittedAddressTB</Member>
+        <Member type="Field">internal TextBox contactNoBtn</Member>
+        <Member type="Field">internal ComboBox assignedDonorComboBox</Member>
+        <Member type="Field">internal TextBox donorContactBtn</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;DonorInfo&gt; donorCollection { get; }</Member>
+        <Member type="Constructor">public AssignDonor(PatientInfo info)</Member>
+        <Member type="Method">private Void cancelRegistrationBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void Window_Loaded(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void assignedDonorComboBox_SelectionChanged(Object sender, SelectionChangedEventArgs e)</Member>
+        <Member type="Method">private Void submitRegistrationBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AddExpenseWindow</Name>
+        <Access>Public</Access>
+        <Location left="648" top="12" />
+        <Size width="162" height="332" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String expenseId</Member>
+        <Member type="Field">private Boolean isEdit</Member>
+        <Member type="Field">internal Button submitAddExpenseBtn</Member>
+        <Member type="Field">internal Button cancelAddExpenseBtn</Member>
+        <Member type="Field">internal TextBox expensePurposeTB</Member>
+        <Member type="Field">internal DatePicker dOEDatePicker</Member>
+        <Member type="Field">internal TextBox expensedByTB</Member>
+        <Member type="Field">internal TextBox expensedAmountsTB</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public AddExpenseWindow(ExpenseInfo info)</Member>
+        <Member type="Method">private Void cancelAddExpenseBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void submitAddExpenseBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private String GenerateId()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AddWellWisherWindow</Name>
+        <Access>Public</Access>
+        <Location left="436" top="12" />
+        <Size width="162" height="349" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String wellWisherId</Member>
+        <Member type="Field">private Boolean isEdit</Member>
+        <Member type="Field">internal Button submitAddWellWisherBtn</Member>
+        <Member type="Field">internal Button cancelAddWellWisherBtn</Member>
+        <Member type="Field">internal TextBox wellWishersNameTB</Member>
+        <Member type="Field">internal DatePicker dOJDatePicker</Member>
+        <Member type="Field">internal TextBox addressdTB</Member>
+        <Member type="Field">internal TextBox contactNoTB</Member>
+        <Member type="Field">internal TextBox remarkTB</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public AddWellWisherWindow(WellWisherInfo info)</Member>
+        <Member type="Method">private Void cancelAddWellWisherBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void submitAddWellWisherBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private String GenerateId()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MemberDetailsWindow</Name>
+        <Access>Public</Access>
+        <Location left="224" top="12" />
+        <Size width="162" height="332" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String memberId</Member>
+        <Member type="Field">private Boolean isEdit</Member>
+        <Member type="Field">internal Button submitAddMemberBtn</Member>
+        <Member type="Field">internal Button cancelAddMemberBtn</Member>
+        <Member type="Field">internal TextBox membersNameTB</Member>
+        <Member type="Field">internal DatePicker dOJDatePicker</Member>
+        <Member type="Field">internal TextBox addressTB</Member>
+        <Member type="Field">internal TextBox contactNoTB</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public MemberDetailsWindow(MemberInfo info)</Member>
+        <Member type="Method">private Void cancelAddMemberBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void submitAddMemberBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private String GenerateId()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Delegate">
+        <Name>delegateOnSucccesfulLogin</Name>
+        <Access>Public</Access>
+        <Location left="12" top="12" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <ReturnType>Void</ReturnType>
+        <Param>String returnMsg</Param>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Nesting" first="7" second="29">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>BDMSData.dll</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>TodoInfo</Name>
+        <Access>Public</Access>
+        <Location left="648" top="326" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public String id { get; set; }</Member>
+        <Member type="Property">public DateTime date { get; set; }</Member>
+        <Member type="Property">public String details { get; set; }</Member>
+        <Member type="Constructor">public TodoInfo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>DonorInfo</Name>
+        <Access>Public</Access>
+        <Location left="436" top="326" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public String id { get; set; }</Member>
+        <Member type="Property">public String name { get; set; }</Member>
+        <Member type="Property">public String bloodGroup { get; set; }</Member>
+        <Member type="Property">public String phone { get; set; }</Member>
+        <Member type="Property">public String address { get; set; }</Member>
+        <Member type="Property">public DateTime lastDonateDate { get; set; }</Member>
+        <Member type="Property">public DateTime dob { get; set; }</Member>
+        <Member type="Constructor">public DonorInfo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ExpenseInfo</Name>
+        <Access>Public</Access>
+        <Location left="224" top="326" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public String id { get; set; }</Member>
+        <Member type="Property">public String purpose { get; set; }</Member>
+        <Member type="Property">public DateTime doe { get; set; }</Member>
+        <Member type="Property">public String expensed_by { get; set; }</Member>
+        <Member type="Property">public Double amount { get; set; }</Member>
+        <Member type="Constructor">public ExpenseInfo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>EventInfo</Name>
+        <Access>Public</Access>
+        <Location left="12" top="326" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public String id { get; set; }</Member>
+        <Member type="Property">public String eventTitle { get; set; }</Member>
+        <Member type="Property">public DateTime eventDoe { get; set; }</Member>
+        <Member type="Property">public String eventVenue { get; set; }</Member>
+        <Member type="Property">public String eventGoal { get; set; }</Member>
+        <Member type="Constructor">public EventInfo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>FundInfo</Name>
+        <Access>Public</Access>
+        <Location left="860" top="12" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public String id { get; set; }</Member>
+        <Member type="Property">public String wellwisher_name { get; set; }</Member>
+        <Member type="Property">public String contact { get; set; }</Member>
+        <Member type="Property">public DateTime dod { get; set; }</Member>
+        <Member type="Property">public String received_by { get; set; }</Member>
+        <Member type="Property">public Double amount { get; set; }</Member>
+        <Member type="Constructor">public FundInfo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>HdbbInfo</Name>
+        <Access>Public</Access>
+        <Location left="648" top="12" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public String id { get; set; }</Member>
+        <Member type="Property">public String type { get; set; }</Member>
+        <Member type="Property">public String name { get; set; }</Member>
+        <Member type="Property">public String address { get; set; }</Member>
+        <Member type="Property">public String phone { get; set; }</Member>
+        <Member type="Constructor">public HdbbInfo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PatientInfo</Name>
+        <Access>Public</Access>
+        <Location left="436" top="12" />
+        <Size width="162" height="264" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public String id { get; set; }</Member>
+        <Member type="Property">public String name { get; set; }</Member>
+        <Member type="Property">public String bloodGroup { get; set; }</Member>
+        <Member type="Property">public Int32 age { get; set; }</Member>
+        <Member type="Property">public String address { get; set; }</Member>
+        <Member type="Property">public String phone { get; set; }</Member>
+        <Member type="Property">public String admittedAddress { get; set; }</Member>
+        <Member type="Property">public DateTime expectedDate { get; set; }</Member>
+        <Member type="Property">public String assignedDonor { get; set; }</Member>
+        <Member type="Property">public String donorContact { get; set; }</Member>
+        <Member type="Constructor">public PatientInfo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>WellWisherInfo</Name>
+        <Access>Public</Access>
+        <Location left="224" top="12" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public String id { get; set; }</Member>
+        <Member type="Property">public String name { get; set; }</Member>
+        <Member type="Property">public String address { get; set; }</Member>
+        <Member type="Property">public DateTime doj { get; set; }</Member>
+        <Member type="Property">public String phone { get; set; }</Member>
+        <Member type="Property">public String remarks { get; set; }</Member>
+        <Member type="Constructor">public WellWisherInfo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MemberInfo</Name>
+        <Access>Public</Access>
+        <Location left="12" top="12" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public String id { get; set; }</Member>
+        <Member type="Property">public String name { get; set; }</Member>
+        <Member type="Property">public DateTime doj { get; set; }</Member>
+        <Member type="Property">public String address { get; set; }</Member>
+        <Member type="Property">public String phone { get; set; }</Member>
+        <Member type="Constructor">public MemberInfo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships />
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>BDMSDb.dll</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>DbInteraction</Name>
+        <Access>Public</Access>
+        <Location left="12" top="12" />
+        <Size width="162" height="1097" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private static String passwordCurrent</Member>
+        <Member type="Field">private static String dbmsCurrent</Member>
+        <Member type="Constructor">static DbInteraction()</Member>
+        <Member type="Method">private static MySqlConnection OpenDbConnection()</Member>
+        <Member type="Method">public static Int32 DoRegisterNewDonor(DonorInfo donorDetails)</Member>
+        <Member type="Method">private static Int32 DoRegisterNewDonorInDb(DonorInfo donorDetails)</Member>
+        <Member type="Method">public static List&lt;DonorInfo&gt; GetAllDonorList()</Member>
+        <Member type="Method">private static List&lt;DonorInfo&gt; QueryAllDonorList()</Member>
+        <Member type="Method">public static Void DeleteDonor(String donorToDelete)</Member>
+        <Member type="Method">public static Void EditDonor(DonorInfo donorToEdit)</Member>
+        <Member type="Method">public static Int32 DoRegisterNewMember(MemberInfo memberDetails)</Member>
+        <Member type="Method">private static Int32 DoRegisterNewMemberInDb(MemberInfo memberDetails)</Member>
+        <Member type="Method">public static List&lt;MemberInfo&gt; GetAllMemberList()</Member>
+        <Member type="Method">private static List&lt;MemberInfo&gt; QueryAllMemberList()</Member>
+        <Member type="Method">public static Void DeleteMember(String memberToDelete)</Member>
+        <Member type="Method">public static Void EditMember(MemberInfo memberToEdit)</Member>
+        <Member type="Method">public static Int32 DoRegisterPatient(PatientInfo patientDetails)</Member>
+        <Member type="Method">private static Int32 DoRegisterNewPatientInDb(PatientInfo patientDetails)</Member>
+        <Member type="Method">public static List&lt;PatientInfo&gt; GetAllPatientList()</Member>
+        <Member type="Method">private static List&lt;PatientInfo&gt; QueryAllPatientList()</Member>
+        <Member type="Method">public static Void DeletePatient(String patientToDelete)</Member>
+        <Member type="Method">public static Void EditPatient(PatientInfo patientToEdit)</Member>
+        <Member type="Method">public static Int32 DoRegisterWellWisher(WellWisherInfo wellWisherDetails)</Member>
+        <Member type="Method">private static Int32 DoRegisterWellWisherInDb(WellWisherInfo wellWisherDetails)</Member>
+        <Member type="Method">public static List&lt;WellWisherInfo&gt; GetAllWellWisherList()</Member>
+        <Member type="Method">private static List&lt;WellWisherInfo&gt; QueryAllWellWisherList()</Member>
+        <Member type="Method">public static Void DeleteWellWisher(String wellWisherToDelete)</Member>
+        <Member type="Method">public static Void EditWellWisher(WellWisherInfo wellWisherToEdit)</Member>
+        <Member type="Method">public static Int32 DoRegisterNewEvent(EventInfo EventDetails)</Member>
+        <Member type="Method">private static Int32 DoRegisterNewEventInDb(EventInfo eventDetails)</Member>
+        <Member type="Method">public static List&lt;EventInfo&gt; GetAllEventList()</Member>
+        <Member type="Method">private static List&lt;EventInfo&gt; QueryAllEventList()</Member>
+        <Member type="Method">public static Void DeleteEvent(String eventToDelete)</Member>
+        <Member type="Method">public static Void EditEvent(EventInfo eventToEdit)</Member>
+        <Member type="Method">public static Int32 DoRegisterNewTodo(TodoInfo todoDetails)</Member>
+        <Member type="Method">private static Int32 DoRegisterNewTodoInDb(TodoInfo todoDetails)</Member>
+        <Member type="Method">public static List&lt;TodoInfo&gt; GetAllTodoList()</Member>
+        <Member type="Method">private static List&lt;TodoInfo&gt; QueryAllTodoList()</Member>
+        <Member type="Method">public static Void DeleteTodo(String todoToDelete)</Member>
+        <Member type="Method">public static Int32 DoRegisterNewHdbb(HdbbInfo hdbbDetails)</Member>
+        <Member type="Method">private static Int32 DoRegisterNewHdbbInDb(HdbbInfo hdbbDetails)</Member>
+        <Member type="Method">public static List&lt;HdbbInfo&gt; GetAllHdbbList()</Member>
+        <Member type="Method">private static List&lt;HdbbInfo&gt; QueryAllHdbbList()</Member>
+        <Member type="Method">public static Void DeleteHdbb(String hdbbToDelete)</Member>
+        <Member type="Method">public static Void EditHdbb(HdbbInfo hdbbToEdit)</Member>
+        <Member type="Method">public static Int32 DoRegisterNewFund(FundInfo fundDetails)</Member>
+        <Member type="Method">private static Int32 DoRegisterNewFundInDb(FundInfo fundDetails)</Member>
+        <Member type="Method">public static List&lt;FundInfo&gt; GetAllFundList()</Member>
+        <Member type="Method">private static List&lt;FundInfo&gt; QueryAllFundList()</Member>
+        <Member type="Method">public static Void DeleteFund(String fundToDelete)</Member>
+        <Member type="Method">public static Void EditFund(FundInfo fundToEdit)</Member>
+        <Member type="Method">public static Int32 DoRegisterNewExpense(ExpenseInfo expenseDetails)</Member>
+        <Member type="Method">private static Int32 DoRegisterNewExpenseInDb(ExpenseInfo expenseDetails)</Member>
+        <Member type="Method">public static List&lt;ExpenseInfo&gt; GetAllExpenseList()</Member>
+        <Member type="Method">private static List&lt;ExpenseInfo&gt; QueryAllExpenseList()</Member>
+        <Member type="Method">public static Void DeleteExpense(String expenseToDelete)</Member>
+        <Member type="Method">public static Void EditExpense(ExpenseInfo expenseToEdit)</Member>
+        <Member type="Method">public static List&lt;PatientInfo&gt; GetAllPatientListWithAssignedDonor()</Member>
+        <Member type="Method">public static DonorInfo getDonorInfo(String donorId)</Member>
+        <Member type="Method">public static Void assignDonor(PatientInfo patientData)</Member>
+        <Modifier>Static</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships />
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>BDMSStyles.dll</Name>
+    <Language>CSharp</Language>
+    <Entities />
+    <Relationships />
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>BDMS.exe</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>SearchForBloodWindow</Name>
+        <Access>Public</Access>
+        <Location left="1072" top="1413" />
+        <Size width="162" height="247" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">internal Button submitSearchForBloodBtn</Member>
+        <Member type="Field">internal Button cancelSearchForBloodBtn</Member>
+        <Member type="Field">internal ComboBox bloodGroupComboBox</Member>
+        <Member type="Field">internal DatePicker expectedDateDatePicker</Member>
+        <Member type="Field">internal TextBox locationBtn</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public SearchForBloodWindow()</Member>
+        <Member type="Method">private Void cancelSearchForBloodBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>EventsWindow</Name>
+        <Access>Public</Access>
+        <Location left="860" top="1413" />
+        <Size width="162" height="417" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;EventInfo&gt; _eventCollection</Member>
+        <Member type="Field">internal Button viewUpcomingEventBtn</Member>
+        <Member type="Field">internal Button addUpcomingEventBtn</Member>
+        <Member type="Field">internal Button editEventBtn</Member>
+        <Member type="Field">internal Button deleteEventBtn</Member>
+        <Member type="Field">internal Button previousEventsBtn</Member>
+        <Member type="Field">internal Button okEventsBtn</Member>
+        <Member type="Field">internal ListView eventView</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;EventInfo&gt; eventCollection { get; }</Member>
+        <Member type="Constructor">public EventsWindow()</Member>
+        <Member type="Method">private Void previousEventsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void addUpcomingEventBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void okEventsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void viewUpcomingEventBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void deleteEventBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private EventInfo GetSelectedItem()</Member>
+        <Member type="Method">private Void editEventBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AddUpcomingEventWindow</Name>
+        <Access>Public</Access>
+        <Location left="648" top="1413" />
+        <Size width="162" height="332" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String eventId</Member>
+        <Member type="Field">private Boolean isEdit</Member>
+        <Member type="Field">internal Button submitAddUpcomingEventBtn</Member>
+        <Member type="Field">internal Button cancelAddUpcomingEventBtn</Member>
+        <Member type="Field">internal TextBox eventTitleBtn</Member>
+        <Member type="Field">internal DatePicker dOEDatePicker</Member>
+        <Member type="Field">internal TextBox venueBtn</Member>
+        <Member type="Field">internal TextBox goalofEventBtn</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public AddUpcomingEventWindow(EventInfo info)</Member>
+        <Member type="Method">private Void cancelAddUpcomingEventBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void submitAddUpcomingEventBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private String GenerateId()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MainWindow</Name>
+        <Access>Public</Access>
+        <Location left="436" top="1413" />
+        <Size width="162" height="672" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Boolean LoggedIn</Member>
+        <Member type="Field">internal Button loginBtn</Member>
+        <Member type="Field">internal DockPanel mainDocPanel</Member>
+        <Member type="Field">internal Button calculatorBtn</Member>
+        <Member type="Field">internal Button mobileSyncBtn</Member>
+        <Member type="Field">internal Button webSyncBtn</Member>
+        <Member type="Field">internal Button generateTestimonialBtn</Member>
+        <Member type="Field">internal Button helpBtn</Member>
+        <Member type="Field">internal Button closeBtn</Member>
+        <Member type="Field">internal Button donorsBtn</Member>
+        <Member type="Field">internal Button patientsBtn</Member>
+        <Member type="Field">internal Button donorAssignmentBtn</Member>
+        <Member type="Field">internal Button membersBtn</Member>
+        <Member type="Field">internal Button fundsBtn</Member>
+        <Member type="Field">internal Button toDoBtn</Member>
+        <Member type="Field">internal Button wellWisherBtn</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public MainWindow()</Member>
+        <Member type="Method">private Void loginBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void LoginWindowObj_OnSucccesfulLogin(String returnMsg)</Member>
+        <Member type="Method">private Void donorsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void patientsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void membersBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void eventsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void calculatorBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void helpBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void closeBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void toDoBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void wellWisherBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void fundsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void donorAssignmentBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void webSyncBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void generateTestimonialBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CreateAccountWindow</Name>
+        <Access>Public</Access>
+        <Location left="224" top="1413" />
+        <Size width="162" height="298" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">internal Button createAccountSubmitBtn</Member>
+        <Member type="Field">internal Button canclcreateAccountBtn</Member>
+        <Member type="Field">internal TextBox fullNameBtn</Member>
+        <Member type="Field">internal ComboBox userTypeComboBox</Member>
+        <Member type="Field">internal TextBox userIdBtn</Member>
+        <Member type="Field">internal PasswordBox loginPasswordBox</Member>
+        <Member type="Field">internal TextBox addressdBtn</Member>
+        <Member type="Field">internal DatePicker dOBDatePicker</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public CreateAccountWindow()</Member>
+        <Member type="Method">private Void canclcreateAccountBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ExpenseWindow</Name>
+        <Access>Public</Access>
+        <Location left="12" top="1413" />
+        <Size width="162" height="383" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;ExpenseInfo&gt; _expenseCollection</Member>
+        <Member type="Field">internal Button viewExpenseBtn</Member>
+        <Member type="Field">internal Button addExpenseBtn</Member>
+        <Member type="Field">internal Button editExpenseBtn</Member>
+        <Member type="Field">internal Button deleteExpenseBtn</Member>
+        <Member type="Field">internal Button okExpenseBtn</Member>
+        <Member type="Field">internal ListView expenseView</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;ExpenseInfo&gt; expenseCollection { get; }</Member>
+        <Member type="Constructor">public ExpenseWindow()</Member>
+        <Member type="Method">private Void addExpenseBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void okExpenseBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void viewExpenseBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void deleteExpenseBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private ExpenseInfo GetSelectedItem()</Member>
+        <Member type="Method">private Void editExpenseBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>RegistrationForBloodWindow</Name>
+        <Access>Public</Access>
+        <Location left="1496" top="980" />
+        <Size width="162" height="383" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String patientId</Member>
+        <Member type="Field">private Boolean isEdit</Member>
+        <Member type="Field">internal Button submitRegistrationBtn</Member>
+        <Member type="Field">internal Button cancelRegistrationBtn</Member>
+        <Member type="Field">internal TextBox patientsNameTB</Member>
+        <Member type="Field">internal TextBox addressdTB</Member>
+        <Member type="Field">internal ComboBox bloodGroupComboBox</Member>
+        <Member type="Field">internal TextBox ageTB</Member>
+        <Member type="Field">internal DatePicker expectedDateDatePicker</Member>
+        <Member type="Field">internal TextBox admittedAddressTB</Member>
+        <Member type="Field">internal TextBox contactNoBtn</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public RegistrationForBloodWindow(PatientInfo info)</Member>
+        <Member type="Method">private Void cancelRegistrationBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void submitRegistrationBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private String GenerateId()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>LoginWindow</Name>
+        <Access>Public</Access>
+        <Location left="1284" top="980" />
+        <Size width="162" height="281" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">internal Button loginSubmitBtn</Member>
+        <Member type="Field">internal Button cancleloginBtn</Member>
+        <Member type="Field">internal TextBox userIdBtn</Member>
+        <Member type="Field">internal PasswordBox loginPasswordBox</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Event">public event delegateOnSucccesfulLogin OnSucccesfulLogin</Member>
+        <Member type="Constructor">public LoginWindow()</Member>
+        <Member type="Method">private Void createAccountBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void cancleloginBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void loginSubmitBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>HospitalDoctorBloodBankWindow</Name>
+        <Access>Public</Access>
+        <Location left="1072" top="980" />
+        <Size width="162" height="383" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;HdbbInfo&gt; _hdbbCollection</Member>
+        <Member type="Field">internal Button viewDetailsBtn</Member>
+        <Member type="Field">internal Button addHospitalDoctorBloodBankBtn</Member>
+        <Member type="Field">internal Button editDetailsBtn</Member>
+        <Member type="Field">internal Button deleteDetailsBtn</Member>
+        <Member type="Field">internal Button okHDBBBtn</Member>
+        <Member type="Field">internal ListView hdbbView</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;HdbbInfo&gt; hdbbCollection { get; }</Member>
+        <Member type="Constructor">public HospitalDoctorBloodBankWindow()</Member>
+        <Member type="Method">private Void addHospitalDoctorBloodBankBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void okHDBBBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void viewDetailsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void deleteDetailsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private HdbbInfo GetSelectedItem()</Member>
+        <Member type="Method">private Void editDetailsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Testimonial</Name>
+        <Access>Public</Access>
+        <Location left="860" top="980" />
+        <Size width="162" height="349" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">internal Label label1</Member>
+        <Member type="Field">internal Label label2</Member>
+        <Member type="Field">internal Label label3</Member>
+        <Member type="Field">internal Label label4</Member>
+        <Member type="Field">internal Label labeffl4</Member>
+        <Member type="Field">internal Label labefsvdfl4</Member>
+        <Member type="Field">internal Label labefsvffdfl4</Member>
+        <Member type="Field">internal TextBox textBox1</Member>
+        <Member type="Field">internal ComboBox bloodGroupComboBox</Member>
+        <Member type="Field">internal DatePicker datePicker1</Member>
+        <Member type="Field">internal Button button1</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public Testimonial()</Member>
+        <Member type="Method">private Void button1_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>DonorDetailsWindow</Name>
+        <Access>Public</Access>
+        <Location left="648" top="980" />
+        <Size width="162" height="366" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String donorId</Member>
+        <Member type="Field">private Boolean isEdit</Member>
+        <Member type="Field">internal Button submitAddDonorBtn</Member>
+        <Member type="Field">internal Button cancelAddDonorBtn</Member>
+        <Member type="Field">internal TextBox donorsNameTb</Member>
+        <Member type="Field">internal ComboBox bloodGroupComboBox</Member>
+        <Member type="Field">internal DatePicker dOBDatePicker</Member>
+        <Member type="Field">internal TextBox addressdBtn</Member>
+        <Member type="Field">internal TextBox contactNoTB</Member>
+        <Member type="Field">internal DatePicker lastDonationDatePicker</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public DonorDetailsWindow(DonorInfo info)</Member>
+        <Member type="Method">private Void cancelAddDonorBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void submitAddDonorBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private String GenerateId()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>App</Name>
+        <Access>Public</Access>
+        <Location left="436" top="980" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public App()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">public static Void Main()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PreviousEventsWindow</Name>
+        <Access>Public</Access>
+        <Location left="224" top="980" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public PreviousEventsWindow()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>DonorsWindow</Name>
+        <Access>Public</Access>
+        <Location left="12" top="980" />
+        <Size width="162" height="383" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;DonorInfo&gt; _donorCollection</Member>
+        <Member type="Field">internal Button viewDonorBtn</Member>
+        <Member type="Field">internal Button addDonorBtn</Member>
+        <Member type="Field">internal Button editDonorBtn</Member>
+        <Member type="Field">internal Button deleteDonorBtn</Member>
+        <Member type="Field">internal Button okDonorBtn</Member>
+        <Member type="Field">internal ListView donorView</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;DonorInfo&gt; donorCollection { get; }</Member>
+        <Member type="Constructor">public DonorsWindow()</Member>
+        <Member type="Method">private Void addDonorBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void okDonorBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void viewDonorBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void deleteDonorBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private DonorInfo GetSelectedItem()</Member>
+        <Member type="Method">private Void editDonorBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AddHospitalDoctorBloodBankWindow</Name>
+        <Access>Public</Access>
+        <Location left="1496" top="479" />
+        <Size width="162" height="349" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String hdbbId</Member>
+        <Member type="Field">private Boolean isEdit</Member>
+        <Member type="Field">internal Button submitAddHospitalDoctorBloodBankBtn</Member>
+        <Member type="Field">internal Button cancelAddHospitalDoctorBloodBankBtn</Member>
+        <Member type="Field">internal ComboBox typeComboBox</Member>
+        <Member type="Field">internal TextBox nameTB</Member>
+        <Member type="Field">internal TextBox addressTB</Member>
+        <Member type="Field">internal TextBox contactNoTB</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public AddHospitalDoctorBloodBankWindow(HdbbInfo info)</Member>
+        <Member type="Method">private Void cancelAddHospitalDoctorBloodBankBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void submitAddHospitalDoctorBloodBankBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private String GenerateId()</Member>
+        <Member type="Method">private Void contactNoTB_TextChanged(Object sender, TextChangedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PatientsWindow</Name>
+        <Access>Public</Access>
+        <Location left="1284" top="479" />
+        <Size width="162" height="400" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;PatientInfo&gt; _patientCollection</Member>
+        <Member type="Field">internal Button registrationForBloodBtn</Member>
+        <Member type="Field">internal Button viewRegisteredPatientsBtn</Member>
+        <Member type="Field">internal Button editRegisteredPatientsBtn</Member>
+        <Member type="Field">internal Button deleteRegisteredPatientsBtn</Member>
+        <Member type="Field">internal Button okPatientBtn</Member>
+        <Member type="Field">internal ListView patientView</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;PatientInfo&gt; patientCollection { get; }</Member>
+        <Member type="Constructor">public PatientsWindow()</Member>
+        <Member type="Method">private Void registrationForBloodBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void searchForBloodBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void okPatientBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void viewRegisteredPatientsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void deleteRegisteredPatientsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private PatientInfo GetSelectedItem()</Member>
+        <Member type="Method">private Void editRegisteredPatientsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>WebSync</Name>
+        <Access>Public</Access>
+        <Location left="1072" top="479" />
+        <Size width="162" height="315" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">internal Button registerDonorBtn</Member>
+        <Member type="Field">internal Button registerPatientBtn</Member>
+        <Member type="Field">internal Button viewDonorBtn</Member>
+        <Member type="Field">internal Button viewPatientBtn</Member>
+        <Member type="Field">internal WebBrowser mainWb</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public WebSync()</Member>
+        <Member type="Method">private Void registerDonorBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void registerPatientBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void viewDonorBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void viewPatientBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void mainWb_Loaded(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>WellWishersWindow</Name>
+        <Access>Public</Access>
+        <Location left="860" top="479" />
+        <Size width="162" height="383" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;WellWisherInfo&gt; _WellWisherCollection</Member>
+        <Member type="Field">internal Button viewWellWishersBtn</Member>
+        <Member type="Field">internal Button addWellWisherBtn</Member>
+        <Member type="Field">internal Button editWellWishersBtn</Member>
+        <Member type="Field">internal Button deleteWellWishersBtn</Member>
+        <Member type="Field">internal Button okWellWishersBtn</Member>
+        <Member type="Field">internal ListView WellWisherView</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;WellWisherInfo&gt; WellWisherCollection { get; }</Member>
+        <Member type="Constructor">public WellWishersWindow()</Member>
+        <Member type="Method">private Void okWellWishersBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void addWellWisherBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void viewWellWishersBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void deleteWellWishersBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private WellWisherInfo GetSelectedItem()</Member>
+        <Member type="Method">private Void editWellWishersBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ChangePasswordWindow</Name>
+        <Access>Public</Access>
+        <Location left="648" top="479" />
+        <Size width="162" height="247" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">internal Button submitChangePasswordBtn</Member>
+        <Member type="Field">internal Button cancelChangePasswordBtn</Member>
+        <Member type="Field">internal PasswordBox currentPasswordPasswordBox</Member>
+        <Member type="Field">internal PasswordBox enterNewPasswordPasswordBox</Member>
+        <Member type="Field">internal PasswordBox reEnterNewPasswordPasswordBox</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public ChangePasswordWindow()</Member>
+        <Member type="Method">private Void cancelChangePasswordBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>FundsWindow</Name>
+        <Access>Public</Access>
+        <Location left="436" top="479" />
+        <Size width="162" height="451" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;FundInfo&gt; _fundCollection</Member>
+        <Member type="Field">internal Button viewFundBtn</Member>
+        <Member type="Field">internal Button addFundBtn</Member>
+        <Member type="Field">internal Button editFundBtn</Member>
+        <Member type="Field">internal Button deleteFundBtn</Member>
+        <Member type="Field">internal Button expenseBtn</Member>
+        <Member type="Field">internal Button availableFundBtn</Member>
+        <Member type="Field">internal TextBox viewAvailableFundTB</Member>
+        <Member type="Field">internal Button okReportsBtn</Member>
+        <Member type="Field">internal ListView fundView</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;FundInfo&gt; fundCollection { get; }</Member>
+        <Member type="Constructor">public FundsWindow()</Member>
+        <Member type="Method">private Void okReportsBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void addFundBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void expenseBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void viewFundBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void deleteFundBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private FundInfo GetSelectedItem()</Member>
+        <Member type="Method">private Void editFundBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AddFundWindow</Name>
+        <Access>Public</Access>
+        <Location left="224" top="479" />
+        <Size width="162" height="434" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;WellWisherInfo&gt; _WellWisherCollection</Member>
+        <Member type="Field">private ObservableCollection&lt;MemberInfo&gt; _memberCollection</Member>
+        <Member type="Field">private String fundId</Member>
+        <Member type="Field">private Boolean isEdit</Member>
+        <Member type="Field">internal Button submitAddFundBtn</Member>
+        <Member type="Field">internal Button cancelAddExpenseBtn</Member>
+        <Member type="Field">internal ComboBox well_wisher_name</Member>
+        <Member type="Field">internal TextBox contactNoTB</Member>
+        <Member type="Field">internal DatePicker dODDatePicker</Member>
+        <Member type="Field">internal ComboBox receivedByComboBox</Member>
+        <Member type="Field">internal TextBox amountsTB</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;WellWisherInfo&gt; WellWisherCollection { get; }</Member>
+        <Member type="Property">public ObservableCollection&lt;MemberInfo&gt; memberCollection { get; }</Member>
+        <Member type="Constructor">public AddFundWindow(FundInfo info)</Member>
+        <Member type="Method">private Void cancelAddExpenseBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void submitAddFundBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private String GenerateId()</Member>
+        <Member type="Method">private Void Window_Loaded(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ToDoWindow</Name>
+        <Access>Public</Access>
+        <Location left="12" top="479" />
+        <Size width="162" height="417" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;TodoInfo&gt; _todoCollection</Member>
+        <Member type="Field">internal Button viewToDoBtn</Member>
+        <Member type="Field">internal TextBox detailsTB</Member>
+        <Member type="Field">internal Button addToDoBtn</Member>
+        <Member type="Field">internal Button editToDoBtn</Member>
+        <Member type="Field">internal Button deleteToDoBtn</Member>
+        <Member type="Field">internal Button okToDoBtn</Member>
+        <Member type="Field">internal ListView todoListView</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;TodoInfo&gt; todoCollection { get; }</Member>
+        <Member type="Constructor">public ToDoWindow()</Member>
+        <Member type="Method">private Void okToDoBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void addToDoBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private String GenerateId()</Member>
+        <Member type="Method">private Void todoListView_SelectionChanged(Object sender, SelectionChangedEventArgs e)</Member>
+        <Member type="Method">private Void viewToDoBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void deleteToDoBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private TodoInfo GetSelectedItem()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MembersWindow</Name>
+        <Access>Public</Access>
+        <Location left="1496" top="12" />
+        <Size width="162" height="383" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;MemberInfo&gt; _memberCollection</Member>
+        <Member type="Field">internal Button viewMembersBtn</Member>
+        <Member type="Field">internal Button addMemberBtn</Member>
+        <Member type="Field">internal Button editMemberBtn</Member>
+        <Member type="Field">internal Button deleteMemberBtn</Member>
+        <Member type="Field">internal Button okMembersBtn</Member>
+        <Member type="Field">internal ListView memberView</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;MemberInfo&gt; memberCollection { get; }</Member>
+        <Member type="Constructor">public MembersWindow()</Member>
+        <Member type="Method">private Void addMemberBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void okMembersBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void viewMembersBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void deleteMemberBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private MemberInfo GetSelectedItem()</Member>
+        <Member type="Method">private Void editMemberBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>DonorAssignmentDetails</Name>
+        <Access>Public</Access>
+        <Location left="1284" top="12" />
+        <Size width="162" height="315" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;PatientInfo&gt; _patientCollection</Member>
+        <Member type="Field">internal Button viewDetailssBtn</Member>
+        <Member type="Field">internal Button assignDonorBtn</Member>
+        <Member type="Field">internal Button okBtn</Member>
+        <Member type="Field">internal ListView assignedDonorView</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;PatientInfo&gt; patientCollection { get; }</Member>
+        <Member type="Constructor">public DonorAssignmentDetails()</Member>
+        <Member type="Method">private Void okBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void viewDetailssBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void assignDonorBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private PatientInfo GetSelectedItem()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>HelpWindow</Name>
+        <Access>Public</Access>
+        <Location left="1072" top="12" />
+        <Size width="162" height="247" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">internal Button hospitalDoctorBloodBankBtn</Member>
+        <Member type="Field">internal Button changePasswordBtn</Member>
+        <Member type="Field">internal Button okHelpBtn</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public HelpWindow()</Member>
+        <Member type="Method">private Void changePasswordBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void hospitalDoctorBloodBankBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void okHelpBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AssignDonor</Name>
+        <Access>Public</Access>
+        <Location left="860" top="12" />
+        <Size width="162" height="417" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ObservableCollection&lt;DonorInfo&gt; _donorCollection</Member>
+        <Member type="Field">internal Button submitRegistrationBtn</Member>
+        <Member type="Field">internal Button cancelRegistrationBtn</Member>
+        <Member type="Field">internal TextBox patientsIdTB</Member>
+        <Member type="Field">internal TextBox patientsNameTB</Member>
+        <Member type="Field">internal TextBox bloodGroup</Member>
+        <Member type="Field">internal TextBox expectedDate</Member>
+        <Member type="Field">internal TextBox admittedAddressTB</Member>
+        <Member type="Field">internal TextBox contactNoBtn</Member>
+        <Member type="Field">internal ComboBox assignedDonorComboBox</Member>
+        <Member type="Field">internal TextBox donorContactBtn</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Property">public ObservableCollection&lt;DonorInfo&gt; donorCollection { get; }</Member>
+        <Member type="Constructor">public AssignDonor(PatientInfo info)</Member>
+        <Member type="Method">private Void cancelRegistrationBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void Window_Loaded(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void assignedDonorComboBox_SelectionChanged(Object sender, SelectionChangedEventArgs e)</Member>
+        <Member type="Method">private Void submitRegistrationBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AddExpenseWindow</Name>
+        <Access>Public</Access>
+        <Location left="648" top="12" />
+        <Size width="162" height="332" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String expenseId</Member>
+        <Member type="Field">private Boolean isEdit</Member>
+        <Member type="Field">internal Button submitAddExpenseBtn</Member>
+        <Member type="Field">internal Button cancelAddExpenseBtn</Member>
+        <Member type="Field">internal TextBox expensePurposeTB</Member>
+        <Member type="Field">internal DatePicker dOEDatePicker</Member>
+        <Member type="Field">internal TextBox expensedByTB</Member>
+        <Member type="Field">internal TextBox expensedAmountsTB</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public AddExpenseWindow(ExpenseInfo info)</Member>
+        <Member type="Method">private Void cancelAddExpenseBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void submitAddExpenseBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private String GenerateId()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AddWellWisherWindow</Name>
+        <Access>Public</Access>
+        <Location left="436" top="12" />
+        <Size width="162" height="349" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String wellWisherId</Member>
+        <Member type="Field">private Boolean isEdit</Member>
+        <Member type="Field">internal Button submitAddWellWisherBtn</Member>
+        <Member type="Field">internal Button cancelAddWellWisherBtn</Member>
+        <Member type="Field">internal TextBox wellWishersNameTB</Member>
+        <Member type="Field">internal DatePicker dOJDatePicker</Member>
+        <Member type="Field">internal TextBox addressdTB</Member>
+        <Member type="Field">internal TextBox contactNoTB</Member>
+        <Member type="Field">internal TextBox remarkTB</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public AddWellWisherWindow(WellWisherInfo info)</Member>
+        <Member type="Method">private Void cancelAddWellWisherBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void submitAddWellWisherBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private String GenerateId()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MemberDetailsWindow</Name>
+        <Access>Public</Access>
+        <Location left="224" top="12" />
+        <Size width="162" height="332" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String memberId</Member>
+        <Member type="Field">private Boolean isEdit</Member>
+        <Member type="Field">internal Button submitAddMemberBtn</Member>
+        <Member type="Field">internal Button cancelAddMemberBtn</Member>
+        <Member type="Field">internal TextBox membersNameTB</Member>
+        <Member type="Field">internal DatePicker dOJDatePicker</Member>
+        <Member type="Field">internal TextBox addressTB</Member>
+        <Member type="Field">internal TextBox contactNoTB</Member>
+        <Member type="Field">private Boolean _contentLoaded</Member>
+        <Member type="Constructor">public MemberDetailsWindow(MemberInfo info)</Member>
+        <Member type="Method">private Void cancelAddMemberBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private Void submitAddMemberBtn_Click(Object sender, RoutedEventArgs e)</Member>
+        <Member type="Method">private String GenerateId()</Member>
+        <Member type="Method">public Void InitializeComponent()</Member>
+        <Member type="Method">Void System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Delegate">
+        <Name>delegateOnSucccesfulLogin</Name>
+        <Access>Public</Access>
+        <Location left="12" top="12" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <ReturnType>Void</ReturnType>
+        <Param>String returnMsg</Param>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Nesting" first="7" second="29">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
