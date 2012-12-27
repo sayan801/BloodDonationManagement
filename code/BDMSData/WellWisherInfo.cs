@@ -12,7 +12,6 @@ namespace BDMSData
         public string address { get; set; }
         public DateTime doj { get; set; }
         public string phone { get; set; }
-        public string remarks { get; set; }
-        
+        public string remarks { get; set; }        
     }
 }

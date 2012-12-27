@@ -9,8 +9,6 @@ namespace BDMSData
     {
         public string id { get; set; }
         public DateTime date { get; set; }
-        public string details { get; set; }
-        
-        
+        public string details { get; set; }        
     }
 }
