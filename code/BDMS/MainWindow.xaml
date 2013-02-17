@@ -10,7 +10,7 @@
         </ResourceDictionary>
     </Window.Resources>
     <DockPanel LastChildFill="True">
-        <Button Style="{StaticResource smallControlBtnStyle}" Name="loginBtn" ToolTip="Click to Login" Height="50" Width="250" DockPanel.Dock="Top" Click="loginBtn_Click">Login</Button>
+        <Button Style="{StaticResource smallControlBtnStyle}" Name="loginBtn" ToolTip="Click to Login" Height="50" Width="250" DockPanel.Dock="Top" Click="loginBtn_Click">Click to Login</Button>
         <!--<Button Height="50" ToolTip = "Click to Login" Width="250" DockPanel.Dock="Top" Margin="10" Name="loginBtn" Background="#FF4982DB" BorderBrush="#FFC4C458" Foreground="#FFF9F9EC" FontWeight="Bold" Click="loginBtn_Click">Login</Button>-->
         <DockPanel Name="mainDocPanel" IsEnabled="False">
             <UniformGrid DockPanel.Dock="Right" Columns="1" Width="200">
