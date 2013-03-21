@@ -20,9 +20,9 @@
         </UniformGrid>
 
         <UniformGrid DockPanel.Dock="Bottom" Columns="7" Height="50">
-            <Label></Label>
-            <Label></Label>
-            <Label></Label>
+            <Label HorizontalContentAlignment="Center" Background="Beige">Search Donor:</Label>
+            <TextBox Name="searchTxtBlck"  ></TextBox>
+            <Button Content="Search" ToolTip="Serach Donor Database" Name="searchBtn" Style="{StaticResource smallControlBtnStyle}" Click="searchBtn_Click"></Button>
             <Label></Label>
             <Label></Label>
             <Label></Label>

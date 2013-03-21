@@ -98,6 +98,21 @@ namespace Donors
             }
         }
 
+        private void searchBtn_Click(object sender, RoutedEventArgs e)
+        {
+            DonorInfo donorTosearch = new DonorInfo();
+            donorTosearch.name = searchTxtBlck.Text;
+
+            List<DonorInfo> donors = BDMSDb.DbInteraction.SearchAllDonorList(donorTosearch);
+
+            _donorCollection.Clear();
+
+            foreach (DonorInfo donor in donors)
+            {
+                _donorCollection.Add(donor);
+            }
+        }
+
       
 
         

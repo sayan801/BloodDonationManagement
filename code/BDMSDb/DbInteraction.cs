@@ -86,7 +86,7 @@ namespace BDMSDb
                 MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
                 msqlCommand.Connection = msqlConnection;
 
-                msqlCommand.CommandText = "Select * From donor;";
+                msqlCommand.CommandText = "Select * From donor group by name;";
                 MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
 
                 while (msqlReader.Read())
@@ -177,6 +177,54 @@ namespace BDMSDb
                 msqlConnection.Close();
             }
         }
+
+        public static List<DonorInfo> SearchAllDonorList(DonorInfo donorTosearch)
+        {
+            return SearchAllDonorListDetails(donorTosearch);
+        }
+
+        private static List<DonorInfo> SearchAllDonorListDetails(DonorInfo donorTosearch)
+        {
+            List<DonorInfo> DonorList = new List<DonorInfo>();
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "Select * From donor where donor_name = @input or donor_blood_group = @input or donor_address = @input or donor_contact = @input ;";
+                msqlCommand.Parameters.AddWithValue("@input", donorTosearch.name);
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+                while (msqlReader.Read())
+                {
+                    DonorInfo Donor = new DonorInfo();
+
+                    Donor.id = msqlReader.GetString("donor_id");
+                    Donor.name = msqlReader.GetString("donor_name");
+                    Donor.bloodGroup = msqlReader.GetString("donor_blood_group");
+                    Donor.dob = msqlReader.GetDateTime("donor_dob");
+                    Donor.address = msqlReader.GetString("donor_address");
+                    Donor.phone = msqlReader.GetString("donor_contact");
+                    Donor.lastDonateDate = msqlReader.GetDateTime("donor_last_blood_donate");
+
+                    DonorList.Add(Donor);
+                }
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+
+            return DonorList;
+        }
+
 
         #endregion
 
@@ -1498,6 +1546,7 @@ namespace BDMSDb
                 msqlConnection.Close();
             } 
         }
+
     }
 }
 
