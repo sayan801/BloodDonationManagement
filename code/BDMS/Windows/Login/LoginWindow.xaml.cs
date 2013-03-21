@@ -42,7 +42,7 @@ namespace Login
 
         private void loginSubmitBtn_Click(object sender, RoutedEventArgs e)
         {
-            if ((userIdBtn.Text.Equals("ignou")) && (loginPasswordBox.Password.Equals("project")))
+            if ((userIdBtn.Text.Equals("1")) && (loginPasswordBox.Password.Equals("1")))
             {
                 if (OnSucccesfulLogin != null)
                     OnSucccesfulLogin(userIdBtn.Text);
