@@ -440,7 +440,7 @@ namespace BDMSDb
                 MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
                 msqlCommand.Connection = msqlConnection;
 
-                msqlCommand.CommandText = "Select * From patient;";
+                msqlCommand.CommandText = "Select * From patient group by patient_name;";
                 MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
 
                 while (msqlReader.Read())
@@ -533,6 +533,56 @@ namespace BDMSDb
                 //always close the connection
                 msqlConnection.Close();
             }
+        }
+
+        public static List<PatientInfo> SearchAllPatientList(PatientInfo patientiInfoObj)
+        {
+            return SrchAllPatientList(patientiInfoObj);
+        }
+
+        private static List<PatientInfo> SrchAllPatientList(PatientInfo patientiInfoObj)
+        {
+            List<PatientInfo> PatientList = new List<PatientInfo>();
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "Select * From patient where patient_name = @input or patient_blood_group = @input or patient_age = @input or patient_address = @input or patient_contact = @input or patient_admited_address = @input;";
+                msqlCommand.Parameters.AddWithValue("@input", patientiInfoObj.name);
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+                while (msqlReader.Read())
+                {
+                    PatientInfo Patient = new PatientInfo();
+
+                    Patient.id = msqlReader.GetString("patient_id");
+                    Patient.name = msqlReader.GetString("patient_name");
+                    Patient.bloodGroup = msqlReader.GetString("patient_blood_group");
+                    Patient.age = msqlReader.GetInt32("patient_age");
+                    Patient.address = msqlReader.GetString("patient_address");
+                    Patient.phone = msqlReader.GetString("patient_contact");
+                    Patient.admittedAddress = msqlReader.GetString("patient_admited_address");
+                    Patient.expectedDate = msqlReader.GetDateTime("patient_expected_date");
+                    //Patient.admittedAddress = msqlReader.GetString("assigned_donor");
+                    //Patient.expectedDate = msqlReader.GetDateTime("assigned_donor_contact");
+
+                    PatientList.Add(Patient);
+                }
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+
+            return PatientList;
         }
 
         #endregion
@@ -1547,6 +1597,8 @@ namespace BDMSDb
             } 
         }
 
+
+       
     }
 }
 

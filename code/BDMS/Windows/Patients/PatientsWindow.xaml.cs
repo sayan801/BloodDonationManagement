@@ -103,6 +103,21 @@ namespace Patients
                 AddPatientWindowObj.Show();
             }
         }
+
+        private void searchBtn_Click(object sender, RoutedEventArgs e)
+        {
+            PatientInfo patientiInfoObj = new PatientInfo();
+            patientiInfoObj.name = searchTxtBlck.Text;
+
+            List<PatientInfo> patients = BDMSDb.DbInteraction.SearchAllPatientList(patientiInfoObj);
+
+            _patientCollection.Clear();
+
+            foreach (PatientInfo patient in patients)
+            {
+                _patientCollection.Add(patient);
+            }
+        }
         
     }
 }
