@@ -107,6 +107,21 @@ namespace ToDo
             return todoToDelete;
         }
 
+        private void searchBtn_Click(object sender, RoutedEventArgs e)
+        {
+            TodoInfo ToDoInfoObj = new TodoInfo();
+            ToDoInfoObj.details = searchTxtBlck.Text;
+
+            List<TodoInfo> todoList = BDMSDb.DbInteraction.SearchAllTodoList(ToDoInfoObj);
+
+            _todoCollection.Clear();
+
+            foreach (TodoInfo todo in todoList)
+            {
+                _todoCollection.Add(todo);
+            }
+        }
+
         //private void editToDoBtn_Click(object sender, RoutedEventArgs e)
         //{
         //    TodoInfo todoToEdit = GetSelectedItem();

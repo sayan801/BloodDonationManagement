@@ -1078,7 +1078,46 @@ namespace BDMSDb
         //        //always close the connection
         //        msqlConnection.Close();
         //    }
-        //}
+        //}]
+
+        public static List<TodoInfo> SearchAllTodoList(TodoInfo ToDoInfoObj)
+        {
+            List<TodoInfo> TodoList = new List<TodoInfo>();
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "Select * From todo where todo_date = @input or todo_details = @input;";
+                msqlCommand.Parameters.AddWithValue("@input", ToDoInfoObj.details);
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+                while (msqlReader.Read())
+                {
+                    TodoInfo todo = new TodoInfo();
+
+                    todo.id = msqlReader.GetString("todo_id");
+                    todo.date = msqlReader.GetDateTime("todo_date");
+                    todo.details = msqlReader.GetString("todo_details");
+
+                    TodoList.Add(todo);
+                }
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+
+            return TodoList;
+        }
 
         #endregion
 
@@ -1684,6 +1723,8 @@ namespace BDMSDb
             } 
         }
 
+
+        
     }
 }
 
