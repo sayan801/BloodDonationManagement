@@ -289,7 +289,7 @@ namespace BDMSDb
                 MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
                 msqlCommand.Connection = msqlConnection;
 
-                msqlCommand.CommandText = "Select * From member;";
+                msqlCommand.CommandText = "Select * From member group by member_name;";
                 MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
 
                 while (msqlReader.Read())
@@ -374,6 +374,51 @@ namespace BDMSDb
                 //always close the connection
                 msqlConnection.Close();
             }
+        }
+
+        public static List<MemberInfo> SearchAllMemberList(MemberInfo memberinfoObj)
+        {
+            return DoSearchAllMemberList(memberinfoObj);
+        }
+
+        private static List<MemberInfo> DoSearchAllMemberList(MemberInfo memberinfoObj)
+        {
+            List<MemberInfo> MemberList = new List<MemberInfo>();
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "Select * From member where member_name = @input or member_doj = @input or member_address = @input or member_contect = @input;";
+                msqlCommand.Parameters.AddWithValue("@input", memberinfoObj.name);
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+                while (msqlReader.Read())
+                {
+                    MemberInfo Member = new MemberInfo();
+
+                    Member.id = msqlReader.GetString("member_id");
+                    Member.name = msqlReader.GetString("member_name");
+                    Member.doj = msqlReader.GetDateTime("member_doj");
+                    Member.address = msqlReader.GetString("member_address");
+                    Member.phone = msqlReader.GetString("member_contect");
+
+                    MemberList.Add(Member);
+                }
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+
+            return MemberList;
         }
 
         #endregion
@@ -1598,7 +1643,6 @@ namespace BDMSDb
         }
 
 
-       
     }
 }
 

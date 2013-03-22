@@ -99,5 +99,21 @@ namespace Members
                 AddMemberWindowObj.Show();
             }
         }
+
+        private void searchBtn_Click(object sender, RoutedEventArgs e)
+        {
+            MemberInfo memberinfoObj = new MemberInfo();
+            memberinfoObj.name = searchTxtBlck.Text;
+
+            List<MemberInfo> members = BDMSDb.DbInteraction.SearchAllMemberList(memberinfoObj);
+
+            _memberCollection.Clear();
+
+            foreach (MemberInfo member in members)
+            {
+                _memberCollection.Add(member);
+            }
+
+        }
     }
 }
