@@ -1232,7 +1232,7 @@ namespace BDMSDb
 
         #endregion
 
-        #region Fund
+        #region Funds
 
         public static int DoRegisterNewFund(FundInfo fundDetails)
         {
@@ -1294,7 +1294,7 @@ namespace BDMSDb
                 MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
                 msqlCommand.Connection = msqlConnection;
 
-                msqlCommand.CommandText = "Select * From fund;";
+                msqlCommand.CommandText = "Select * From fund group by fund_wellwisher_name;";
                 MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
 
                 while (msqlReader.Read())
@@ -1380,6 +1380,48 @@ namespace BDMSDb
                 //always close the connection
                 msqlConnection.Close();
             }
+        }
+
+        public static List<FundInfo> SearchAllFundList(FundInfo fundInfoObj)
+        {
+            List<FundInfo> FundList = new List<FundInfo>();
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "Select * From fund where fund_wellwisher_name = @input or fund_contact = @input or fund_dod = @input or fund_received_by = @input or fund_amount = @input;";
+                msqlCommand.Parameters.AddWithValue("@input", fundInfoObj.wellwisher_name);
+                
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+                while (msqlReader.Read())
+                {
+                    FundInfo Fund = new FundInfo();
+
+                    Fund.id = msqlReader.GetString("fund_Id");
+                    Fund.wellwisher_name = msqlReader.GetString("fund_wellwisher_name");
+                    Fund.contact = msqlReader.GetString("fund_contact");
+                    Fund.dod = msqlReader.GetDateTime("fund_dod");
+                    Fund.received_by = msqlReader.GetString("fund_received_by");
+                    Fund.amount = msqlReader.GetDouble("fund_amount");
+
+                    FundList.Add(Fund);
+                }
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+
+            return FundList;
         }
 
         #endregion
@@ -1641,7 +1683,6 @@ namespace BDMSDb
                 msqlConnection.Close();
             } 
         }
-
 
     }
 }

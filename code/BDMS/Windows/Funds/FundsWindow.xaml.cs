@@ -104,5 +104,20 @@ namespace Funds
                 AddFundWindowObj.Show();
             }
         }
+
+        private void searchBtn_Click(object sender, RoutedEventArgs e)
+        {
+            FundInfo fundInfoObj = new FundInfo();
+            fundInfoObj.wellwisher_name = searchTxtBlck.Text;
+
+            List<FundInfo> funds = BDMSDb.DbInteraction.SearchAllFundList(fundInfoObj);
+
+            _fundCollection.Clear();
+
+            foreach (FundInfo fund in funds)
+            {
+                _fundCollection.Add(fund);
+            }
+        }
     }
 }

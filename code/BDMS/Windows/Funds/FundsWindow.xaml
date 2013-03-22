@@ -20,11 +20,12 @@
             <Button Style="{StaticResource smallControlBtnStyle}" Name="expenseBtn" ToolTip="All Expenses" Click="expenseBtn_Click">Expenses</Button>
         </UniformGrid>
         <UniformGrid DockPanel.Dock="Bottom" Columns="7" Height="50">
-            <Label></Label>
-            <Label></Label>
+            <Label HorizontalContentAlignment="Center" Style="{StaticResource labelStyle}" >Search Funds:</Label>
+            <TextBox Name="searchTxtBlck" Style="{StaticResource TextBoxStyle}" ></TextBox>
+            <Button Content="Search" ToolTip="Serach Funds Database" Name="searchBtn" Style="{StaticResource smallControlBtnStyle}" Click="searchBtn_Click"></Button>
             <Button Style="{StaticResource smallControlBtnStyle}" Name="availableFundBtn" ToolTip="View Available Funds" >View Available Funds</Button>
             <TextBox Name="viewAvailableFundTB" Margin="10" VerticalContentAlignment="Center" Background="#FF4982DB"  Foreground="#FFF9F9EC" FontWeight="Bold"></TextBox>
-            <Label></Label>
+            
             <Label></Label>
             <Button Style="{StaticResource smallControlBtnStyle}" Name="okReportsBtn" ToolTip="OK" Click="okReportsBtn_Click">OK</Button>
         </UniformGrid>
