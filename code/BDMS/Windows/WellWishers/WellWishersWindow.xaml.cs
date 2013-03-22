@@ -97,6 +97,22 @@ namespace WellWishers
             }
         }
 
+        private void searchBtn_Click(object sender, RoutedEventArgs e)
+        {
+            WellWisherInfo wellWisherInfoObj = new WellWisherInfo();
+            wellWisherInfoObj.name = searchTxtBlck.Text;
+
+            List<WellWisherInfo> wellWishers = BDMSDb.DbInteraction.SearchAllWellWisherList(wellWisherInfoObj);
+
+            _WellWisherCollection.Clear();
+
+            foreach (WellWisherInfo wellWisr in wellWishers)
+            {
+                _WellWisherCollection.Add(wellWisr);
+            }
+
+        }
+
  
     }
 }

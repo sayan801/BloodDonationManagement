@@ -692,7 +692,7 @@ namespace BDMSDb
                 MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
                 msqlCommand.Connection = msqlConnection;
 
-                msqlCommand.CommandText = "Select * From well_wisher;";
+                msqlCommand.CommandText = "Select * From well_wisher group by well_wisher_name;";
                 MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
 
                 while (msqlReader.Read())
@@ -780,6 +780,47 @@ namespace BDMSDb
                 //always close the connection
                 msqlConnection.Close();
             }
+        }
+
+        public static List<WellWisherInfo> SearchAllWellWisherList(WellWisherInfo wellWisherInfoObj)
+        {
+            List<WellWisherInfo> WellWisherList = new List<WellWisherInfo>();
+            MySql.Data.MySqlClient.MySqlConnection msqlConnection = OpenDbConnection();
+
+            try
+            {   //define the command reference
+                MySql.Data.MySqlClient.MySqlCommand msqlCommand = new MySql.Data.MySqlClient.MySqlCommand();
+                msqlCommand.Connection = msqlConnection;
+
+                msqlCommand.CommandText = "Select * From well_wisher where well_wisher_name = @input or well_wisher_address = @input or well_wisher_doj = @input or well_wisher_contact = @input or well_wisher_remarks = @input;";
+                msqlCommand.Parameters.AddWithValue("@input", wellWisherInfoObj.name);
+                MySql.Data.MySqlClient.MySqlDataReader msqlReader = msqlCommand.ExecuteReader();
+
+                while (msqlReader.Read())
+                {
+                    WellWisherInfo WellWisher = new WellWisherInfo();
+
+                    WellWisher.id = msqlReader.GetString("well_wisher_id");
+                    WellWisher.name = msqlReader.GetString("well_wisher_name");
+                    WellWisher.address = msqlReader.GetString("well_wisher_address");
+                    WellWisher.doj = msqlReader.GetDateTime("well_wisher_doj");
+                    WellWisher.phone = msqlReader.GetString("well_wisher_contact");
+                    WellWisher.remarks = msqlReader.GetString("well_wisher_remarks");
+
+                    WellWisherList.Add(WellWisher);
+                }
+
+            }
+            catch (Exception er)
+            {
+            }
+            finally
+            {
+                //always close the connection
+                msqlConnection.Close();
+            }
+
+            return WellWisherList;
         }
 
         #endregion
@@ -1722,6 +1763,8 @@ namespace BDMSDb
                 msqlConnection.Close();
             } 
         }
+
+
 
 
         
