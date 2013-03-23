@@ -1,0 +1,50 @@
+﻿<Window x:Class="WellWishers.WellWishersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Title="Well Wishers" Height="450" Width="1050">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/BDMSStyles;component/ControlStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <DockPanel>
+        <UniformGrid DockPanel.Dock="Top" Rows="1" Height="50">
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="viewWellWishersBtn" ToolTip="View or Refresh Well Wishers" Click="viewWellWishersBtn_Click">View Well Wishers</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="addWellWisherBtn" ToolTip="Add New Well Wisher" Click="addWellWisherBtn_Click">Add Well Wisher</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="editWellWishersBtn" ToolTip="Edit Selected Well Wishers" Click="editWellWishersBtn_Click">Edit Well Wishers</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="deleteWellWishersBtn" ToolTip="Delete Selected Well Wisher" Click="deleteWellWishersBtn_Click">Delete Well Wishers</Button>
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Bottom" Columns="7" Height="50">
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="okWellWishersBtn" ToolTip="OK"  Click="okWellWishersBtn_Click">OK</Button>
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Top">
+
+            <ListView Name="WellWisherView" ItemsSource="{Binding WellWisherCollection}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="300" Header="ID"  DisplayMemberBinding="{Binding id}"  />
+                        <GridViewColumn Width="300" Header="Well Wisher's Name"  DisplayMemberBinding="{Binding name}"  />
+                        <GridViewColumn Width="140" Header="Date of Joining"  DisplayMemberBinding="{Binding doj}"  />
+                        <GridViewColumn Width="250" Header="Address"  DisplayMemberBinding="{Binding address}"  />
+                        <GridViewColumn Width="150" Header="Remarks"  DisplayMemberBinding="{Binding remarks}"  />
+                        <GridViewColumn Width="150" Header="Contact No."  DisplayMemberBinding="{Binding phone}"  />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+
+        </UniformGrid>
+    </DockPanel>
+</Window>

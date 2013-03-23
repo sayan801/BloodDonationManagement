@@ -1,0 +1,45 @@
+﻿<Window x:Class="ToDo.ToDoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Title="To Do" Height="450" Width="1050">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/BDMSStyles;component/ControlStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <DockPanel>
+        <UniformGrid DockPanel.Dock="Top" Rows="1" Height="50">
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="viewToDoBtn" ToolTip="View or Refresh To Do" Click="viewToDoBtn_Click">View To Do</Button>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="detailsTB">Enter Your Task Here</TextBox>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="addToDoBtn" ToolTip="Click To Add To Do" Click="addToDoBtn_Click">Add To Do</Button>
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Bottom" Columns="7" Height="50">
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="editToDoBtn" ToolTip="Edit Selected Details">Edit Details</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="deleteToDoBtn" ToolTip="Delete Selected Details" Click="deleteToDoBtn_Click">Delete Details</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="okToDoBtn" ToolTip="Cancel" Click="okToDoBtn_Click">OK</Button>
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Top">
+
+            <ListView Name="todoListView" DockPanel.Dock="Bottom"  ItemsSource="{Binding todoCollection}" SelectionChanged="todoListView_SelectionChanged">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="150" Header="Date"  DisplayMemberBinding="{Binding date}"  />
+                        <GridViewColumn Width="800" Header="To Do"  DisplayMemberBinding="{Binding details}"  />
+                        
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+        </UniformGrid>
+    </DockPanel>
+</Window>

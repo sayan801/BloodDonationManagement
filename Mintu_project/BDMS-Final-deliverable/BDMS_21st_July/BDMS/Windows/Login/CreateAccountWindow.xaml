@@ -1,0 +1,52 @@
+﻿<Window x:Class="Login.CreateAccountWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Create An Account" Height="450" Width="1050">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/BDMSStyles;component/ControlStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <DockPanel>
+        <UniformGrid DockPanel.Dock="Bottom" Columns="5" Height="50">
+            <Label></Label>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="createAccountSubmitBtn" ToolTip="Submit">Submit</Button>
+            <Label></Label>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="canclcreateAccountBtn" ToolTip="Cancel" Click="canclcreateAccountBtn_Click">Cancel</Button>
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Top" Columns="4">
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Full Name :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="fullNameBtn"></TextBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">User Type :</Label>
+            <ComboBox Style="{StaticResource ComboBoxStyle}" Name="userTypeComboBox">
+                <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}">Admin</ComboBoxItem>
+                <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}">Patient</ComboBoxItem>
+                <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}">Donor</ComboBoxItem>
+                <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}">Member</ComboBoxItem>
+            </ComboBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">User ID :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="userIdBtn"></TextBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Password :</Label>
+            <PasswordBox Style="{StaticResource PasswordBoxStyle}" Name="loginPasswordBox"></PasswordBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Address :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="addressdBtn"></TextBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Date of Birth :</Label>
+            <DatePicker Style="{StaticResource DatePickerStyle}" Name="dOBDatePicker"></DatePicker>
+            <Label></Label>
+        </UniformGrid>
+    </DockPanel>
+</Window>

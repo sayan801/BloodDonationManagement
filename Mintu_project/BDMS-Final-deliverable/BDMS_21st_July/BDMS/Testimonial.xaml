@@ -1,0 +1,33 @@
+﻿<Window x:Class="BDMS.Testimonial"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Testimonial" Height="450" Width="650" ResizeMode="CanMinimize">
+    <Window.Background>
+        <ImageBrush ImageSource="/BDMS;component/Images/GiveLifeBanner.jpg" />
+    </Window.Background>
+    <Grid>
+        <Label Content="This is to certify that Mr./Ms./Mrs." Height="28" HorizontalAlignment="Left" Margin="56,130,0,0" Name="label1" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="15" Foreground="#FF421E40" />
+        <Label Content="has donatedblood on voluntary basis on dated" Height="28" HorizontalAlignment="Left" Margin="21,166,0,0" Name="label2" VerticalAlignment="Top"  FontWeight="Bold" FontStyle="Italic" FontSize="15" Foreground="#FF421E40" />
+        <Label Content=". His/her" Height="28" HorizontalAlignment="Left" Margin="522,166,0,0" Name="label3" VerticalAlignment="Top"  FontWeight="Bold" FontStyle="Italic" FontSize="15" Foreground="#FF421E40" />
+        <Label Content="blood group is" Height="28" HorizontalAlignment="Left" Margin="21,200,0,0" Name="label4" VerticalAlignment="Top"  FontWeight="Bold" FontStyle="Italic" FontSize="15" Foreground="#FF421E40" />
+        <Label Content="contribution to the blood donation movement." Height="28" HorizontalAlignment="Left" Margin="21,234,0,0" Name="labeffl4" VerticalAlignment="Top"  FontWeight="Bold" FontStyle="Italic" FontSize="15" Foreground="#FF421E40" />
+        <Label Content=". We are thankful for the donation of blood and" Height="28" HorizontalAlignment="Left" Margin="246,200,0,0" Name="labefsvdfl4" VerticalAlignment="Top"  FontWeight="Bold" FontSize="15" Foreground="#FF421E40" />
+        <Label Content="Chief Organizer" Height="28" HorizontalAlignment="Left" Margin="449,338,0,0" Name="labefsvffdfl4" VerticalAlignment="Top"  FontWeight="Bold" FontSize="15" Foreground="#FF421E40" />
+
+        <TextBox  Height="30" HorizontalAlignment="Center" Margin="311,0,36,261" Name="textBox1" VerticalAlignment="Bottom" Width="281" Background="Transparent"  FontWeight="Bold" FontStyle="Italic" FontSize="15" Foreground="#FF421E40" HorizontalContentAlignment="Center" />
+
+        <ComboBox Height="30" Margin="138,198,386,184" Name="bloodGroupComboBox"  VerticalAlignment="Center" Width="104" Background="Transparent" HorizontalAlignment="Center" HorizontalContentAlignment="Center"  FontWeight="Bold" FontSize="15" Foreground="#FF421E40" SelectedIndex="0">
+            <ComboBoxItem  HorizontalAlignment="Center" >A+</ComboBoxItem>
+            <ComboBoxItem  HorizontalAlignment="Center" >A-</ComboBoxItem>
+            <ComboBoxItem  HorizontalAlignment="Center" >B+</ComboBoxItem>
+            <ComboBoxItem  HorizontalAlignment="Center" >B-</ComboBoxItem>
+            <ComboBoxItem  HorizontalAlignment="Center" >AB+</ComboBoxItem>
+            <ComboBoxItem  HorizontalAlignment="Center" Background="Transparent">AB-</ComboBoxItem>
+            <ComboBoxItem  HorizontalAlignment="Center" >O+</ComboBoxItem>
+            <ComboBoxItem  HorizontalAlignment="Center" >O-</ComboBoxItem>
+            <ComboBoxItem  HorizontalAlignment="Center" >Bombay</ComboBoxItem>
+        </ComboBox>
+        <DatePicker Height="30" HorizontalAlignment="Left" Margin="363,164,0,0" Name="datePicker1" VerticalAlignment="Top" Width="152" Background="Transparent"  FontWeight="Bold" FontSize="15" Foreground="#FF421E40" HorizontalContentAlignment="Center"/>
+        <Button Content="Print" Height="30" HorizontalAlignment="Left" Margin="41,369,0,0" Name="button1" VerticalAlignment="Top" Width="75" Background="Transparent"  FontWeight="Bold" FontSize="15" Foreground="#FF421E40" Click="button1_Click" />
+    </Grid>
+</Window>

@@ -1,0 +1,59 @@
+﻿<Window x:Class="Donors.DonorDetailsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Donor Details"  Height="450" Width="1050">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/BDMSStyles;component/ControlStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <DockPanel>
+        <UniformGrid DockPanel.Dock="Bottom" Columns="5" Height="50">
+            <Label></Label>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="submitAddDonorBtn" ToolTip="Submit" Click="submitAddDonorBtn_Click">Submit</Button>
+            <Label></Label>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="cancelAddDonorBtn" ToolTip="Cancel" Click="cancelAddDonorBtn_Click">Cancel</Button>
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Top" Columns="4">
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Donor's Name :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="donorsNameTb"></TextBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Blood Group :</Label>
+            <ComboBox Style="{StaticResource ComboBoxStyle}" Name="bloodGroupComboBox">
+                <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}">A+</ComboBoxItem>
+                <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}">A-</ComboBoxItem>
+                <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}">B+</ComboBoxItem>
+                <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}">B-</ComboBoxItem>
+                <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}">AB+</ComboBoxItem>
+                <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}">AB-</ComboBoxItem>
+                <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}">O+</ComboBoxItem>
+                <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}">O-</ComboBoxItem>
+                <ComboBoxItem Style="{StaticResource ComboBoxItemStyle}">Bombay</ComboBoxItem>
+            </ComboBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Date of Birth :</Label>
+            <DatePicker Style="{StaticResource DatePickerStyle}" Name="dOBDatePicker"></DatePicker>
+            <Label></Label>
+            
+
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Address :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="addressdBtn"></TextBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Contact No. :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="contactNoTB"></TextBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Last Donation :</Label>
+            <DatePicker Style="{StaticResource DatePickerStyle}" Name="lastDonationDatePicker"></DatePicker>
+            <Label></Label>
+        </UniformGrid>
+    </DockPanel>
+</Window>

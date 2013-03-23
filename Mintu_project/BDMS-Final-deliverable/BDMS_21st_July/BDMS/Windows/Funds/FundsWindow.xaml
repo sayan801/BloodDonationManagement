@@ -1,0 +1,51 @@
+﻿<Window x:Class="Funds.FundsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Title="Funds" Height="450" Width="1050">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/BDMSStyles;component/ControlStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <DockPanel>
+        <UniformGrid DockPanel.Dock="Top" Rows="1" Height="50">
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="viewFundBtn" ToolTip="View or Refresh Funds" Click="viewFundBtn_Click">View Funds</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="addFundBtn" ToolTip="Add New Fund" Click="addFundBtn_Click">Add Fund</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="editFundBtn" ToolTip="Edit Selected Fund" Click="editFundBtn_Click">Edit Fund</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="deleteFundBtn" ToolTip="Delete Selected Fund" Click="deleteFundBtn_Click">Delete Fund</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="expenseBtn" ToolTip="All Expenses" Click="expenseBtn_Click">Expenses</Button>
+        </UniformGrid>
+        <UniformGrid DockPanel.Dock="Bottom" Columns="7" Height="50">
+            <Label></Label>
+            <Label></Label>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="availableFundBtn" ToolTip="View Available Funds" >View Available Funds</Button>
+            <TextBox Name="viewAvailableFundTB" Margin="10" VerticalContentAlignment="Center" Background="#FF4982DB"  Foreground="#FFF9F9EC" FontWeight="Bold"></TextBox>
+            <Label></Label>
+            <Label></Label>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="okReportsBtn" ToolTip="OK" Click="okReportsBtn_Click">OK</Button>
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Top">
+
+            <ListView Name="fundView" ItemsSource="{Binding fundCollection}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="140" Header="Fund ID"  DisplayMemberBinding="{Binding id}"  />
+                        <GridViewColumn Width="200" Header="Well Wisher's Name"  DisplayMemberBinding="{Binding wellwisher_name}"  />
+                        <GridViewColumn Width="80" Header="Contact No."  DisplayMemberBinding="{Binding contact}"  />
+                        <GridViewColumn Width="120" Header="Date of Donation"  DisplayMemberBinding="{Binding dod}"  />
+                        <GridViewColumn Width="160" Header="Received By"  DisplayMemberBinding="{Binding received_by}"  />
+                        <GridViewColumn Width="130" Header="Amounts"  DisplayMemberBinding="{Binding amount}"  />
+                        
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+
+        </UniformGrid>
+    </DockPanel>
+</Window>

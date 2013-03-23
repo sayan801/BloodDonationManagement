@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{72E7E6AB-C1B9-47CE-990D-E871025B9588}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BDMS</RootNamespace>
+    <AssemblyName>BDMS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Testimonial.xaml.cs">
+      <DependentUpon>Testimonial.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DonorAssignment\AssignDonor.xaml.cs">
+      <DependentUpon>AssignDonor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DonorAssignment\ESCMSData.cs" />
+    <Compile Include="Windows\Members\MemberDetailsWindow.xaml.cs">
+      <DependentUpon>MemberDetailsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Events\AddUpcomingEventWindow.xaml.cs">
+      <DependentUpon>AddUpcomingEventWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\WebSync.xaml.cs">
+      <DependentUpon>WebSync.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\WellWishers\AddWellWisherWindow.xaml.cs">
+      <DependentUpon>AddWellWisherWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Help\ChangePasswordWindow.xaml.cs">
+      <DependentUpon>ChangePasswordWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Login\CreateAccountWindow.xaml.cs">
+      <DependentUpon>CreateAccountWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Events\EventsWindow.xaml.cs">
+      <DependentUpon>EventsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Help\HelpWindow.xaml.cs">
+      <DependentUpon>HelpWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Help\HospitalDoctorBloodBankWindow.xaml.cs">
+      <DependentUpon>HospitalDoctorBloodBankWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Login\LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Members\MembersWindow.xaml.cs">
+      <DependentUpon>MembersWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Patients\PatientsWindow.xaml.cs">
+      <DependentUpon>PatientsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Events\PreviousEventsWindow.xaml.cs">
+      <DependentUpon>PreviousEventsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Patients\RegistrationForBloodWindow.xaml.cs">
+      <DependentUpon>RegistrationForBloodWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Patients\SearchForBloodWindow.xaml.cs">
+      <DependentUpon>SearchForBloodWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ToDo\ToDoWindow.xaml.cs">
+      <DependentUpon>ToDoWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DonorAssignment\DonorAssignmentDetails.xaml.cs">
+      <DependentUpon>DonorAssignmentDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\WellWishers\WellWishersWindow.xaml.cs">
+      <DependentUpon>WellWishersWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Testimonial.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DonorAssignment\AssignDonor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Funds\AddExpenseWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Funds\AddFundWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Help\AddHospitalDoctorBloodBankWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Members\MemberDetailsWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Events\AddUpcomingEventWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\WebSync.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\WellWishers\AddWellWisherWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Help\ChangePasswordWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Login\CreateAccountWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Donors\DonordetailsWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Donors\DonorsWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Events\EventsWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Funds\ExpenseWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Funds\FundsWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Help\HelpWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Help\HospitalDoctorBloodBankWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Login\LoginWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Windows\Funds\AddExpenseWindow.xaml.cs">
+      <DependentUpon>AddExpenseWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Funds\AddFundWindow.xaml.cs">
+      <DependentUpon>AddFundWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Help\AddHospitalDoctorBloodBankWindow.xaml.cs">
+      <DependentUpon>AddHospitalDoctorBloodBankWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\Donors\DonordetailsWindow.xaml.cs">
+      <DependentUpon>DonordetailsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Donors\DonorsWindow.xaml.cs">
+      <DependentUpon>DonorsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Funds\ExpenseWindow.xaml.cs">
+      <DependentUpon>ExpenseWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Funds\FundsWindow.xaml.cs">
+      <DependentUpon>FundsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Windows\Members\MembersWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Patients\PatientsWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Events\PreviousEventsWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Patients\RegistrationForBloodWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Patients\SearchForBloodWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\ToDo\ToDoWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\DonorAssignment\DonorAssignmentDetails.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\WellWishers\WellWishersWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Untitled.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\BDMS.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BDMSData\BDMSData.csproj">
+      <Project>{A42F7B9C-946B-4AF0-BC10-500899A577B7}</Project>
+      <Name>BDMSData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BDMSDb\BDMSDb.csproj">
+      <Project>{E7009EC4-1DDA-4203-9ADC-CF39DFF9B2E5}</Project>
+      <Name>BDMSDb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BDMSStyles\BDMSStyles.csproj">
+      <Project>{61DAF86D-BAB0-4B86-A947-5E59135201C4}</Project>
+      <Name>BDMSStyles</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\GiveLifeBanner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\BDMSicon.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

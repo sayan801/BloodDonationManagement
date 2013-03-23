@@ -1,0 +1,43 @@
+﻿<Window x:Class="WellWishers.AddWellWisherWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Well Wisher" Height="450" Width="1050">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/BDMSStyles;component/ControlStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <DockPanel>
+        <UniformGrid DockPanel.Dock="Bottom" Columns="5" Height="50">
+            <Label></Label>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="submitAddWellWisherBtn" ToolTip="Submit" Click="submitAddWellWisherBtn_Click">Submit</Button>
+            <Label></Label>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="cancelAddWellWisherBtn" ToolTip="Cancel" Click="cancelAddWellWisherBtn_Click">Cancel</Button>
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Top" Columns="4">
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Well Wisher's Name :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="wellWishersNameTB"></TextBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Date of Joining :</Label>
+            <DatePicker Style="{StaticResource DatePickerStyle}" Name="dOJDatePicker"></DatePicker>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Address :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="addressdTB"></TextBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Contact No. :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="contactNoTB"></TextBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Remarks :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="remarkTB"></TextBox>
+            <Label></Label>
+        </UniformGrid>
+    </DockPanel>
+</Window>

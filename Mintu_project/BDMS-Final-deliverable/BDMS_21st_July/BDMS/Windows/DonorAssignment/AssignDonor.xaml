@@ -1,0 +1,57 @@
+﻿<Window x:Class="BDMS.AssignDonor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Title="Assign Donor" Height="450" Width="1050" Loaded="Window_Loaded">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/BDMSStyles;component/ControlStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <DockPanel>
+        <UniformGrid DockPanel.Dock="Bottom" Columns="5" Height="50">
+            <Label></Label>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="submitRegistrationBtn" ToolTip="Submit" Click="submitRegistrationBtn_Click">Submit</Button>
+            <Label></Label>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="cancelRegistrationBtn" ToolTip="Cancel" Click="cancelRegistrationBtn_Click">Cancel</Button>
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Top" Columns="4">
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Patient's ID :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="patientsIdTB" IsEnabled="false"></TextBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Patient's Name :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="patientsNameTB" IsEnabled="false"></TextBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Blood Group :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="bloodGroup" IsEnabled="false"></TextBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Expected Date :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="expectedDate" IsEnabled="false"></TextBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Admitted Address :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="admittedAddressTB" IsEnabled="false"></TextBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Patient's Contact No. :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="contactNoBtn" IsEnabled="false"></TextBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Assign Donor</Label>
+            <ComboBox Style="{StaticResource ComboBoxStyle}" Name="assignedDonorComboBox" ItemsSource="{Binding donorCollection}" DisplayMemberPath="name"  SelectedValuePath="id" SelectionChanged="assignedDonorComboBox_SelectionChanged"></ComboBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Donor's Contact No. :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="donorContactBtn" IsEnabled="False"></TextBox>
+            <Label></Label>
+        </UniformGrid>
+    </DockPanel>
+</Window>

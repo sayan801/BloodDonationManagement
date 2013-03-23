@@ -1,0 +1,39 @@
+﻿<Window x:Class="Events.AddUpcomingEventWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Upcoming Event" Height="450" Width="1050">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/BDMSStyles;component/ControlStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <DockPanel>
+        <UniformGrid DockPanel.Dock="Bottom" Columns="5" Height="50">
+            <Label></Label>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="submitAddUpcomingEventBtn" ToolTip="Submit" Click="submitAddUpcomingEventBtn_Click">Submit</Button>
+            <Label></Label>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="cancelAddUpcomingEventBtn" ToolTip="Cancel" Click="cancelAddUpcomingEventBtn_Click">Cancel</Button>
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Top" Columns="4">
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Event Title :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="eventTitleBtn"></TextBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Date Of Event :</Label>
+            <DatePicker Style="{StaticResource DatePickerStyle}" Name="dOEDatePicker"></DatePicker>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Venue :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="venueBtn"></TextBox>
+            <Label></Label>
+            <Label></Label>
+            <Label Style="{StaticResource labelStyle}">Goal of Event :</Label>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="goalofEventBtn"></TextBox>
+            <Label></Label>
+        </UniformGrid>
+    </DockPanel>
+</Window>

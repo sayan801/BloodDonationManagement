@@ -1,0 +1,49 @@
+﻿<Window x:Class="Members.MembersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Title="Members" Height="450" Width="1050">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/BDMSStyles;component/ControlStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <DockPanel>
+        <UniformGrid DockPanel.Dock="Top" Rows="1" Height="50">
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="viewMembersBtn" ToolTip="View or Refresh Members" Click="viewMembersBtn_Click">View Members</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="addMemberBtn" ToolTip="Add New Member" Click="addMemberBtn_Click">Add Member</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="editMemberBtn" ToolTip="Edit Selected Member" Click="editMemberBtn_Click">Edit Member</Button>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="deleteMemberBtn" ToolTip="Delete Selected Member" Click="deleteMemberBtn_Click">Delete Member</Button>
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Bottom" Columns="7" Height="50">
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Button Style="{StaticResource smallControlBtnStyle}" Name="okMembersBtn" ToolTip="OK"  Click="okMembersBtn_Click">OK</Button>
+        </UniformGrid>
+
+        <UniformGrid DockPanel.Dock="Top">
+
+            <ListView Name="memberView" ItemsSource="{Binding memberCollection}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="200" Header="Member ID"  DisplayMemberBinding="{Binding id}"  />
+                        <GridViewColumn Width="250" Header="Name"  DisplayMemberBinding="{Binding name}"  />
+                        <GridViewColumn Width="140" Header="Date of Joining"  DisplayMemberBinding="{Binding doj}"  />
+                        <GridViewColumn Width="250" Header="Address"  DisplayMemberBinding="{Binding address}"  />
+                        <GridViewColumn Width="140" Header="Contact"  DisplayMemberBinding="{Binding phone}"  />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+
+        </UniformGrid>
+    </DockPanel>
+</Window>
