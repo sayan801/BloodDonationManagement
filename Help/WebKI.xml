@@ -1,0 +1,676 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+
+  <HelpKINode Title="AddExpenseWindow class" Url="html/1188482100.htm" />
+  <HelpKINode Title="AddExpenseWindow class" Url="html/2073386125.htm" />
+  <HelpKINode Title="AddExpenseWindow class">
+    <HelpKINode Title="about AddExpenseWindow class" Url="html/1188482100.htm" />
+    <HelpKINode Title="all members" Url="html/2073386125.htm" />
+    <HelpKINode Title="constructor" Url="html/1604139244.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddExpenseWindow.AddExpenseWindow constructor" Url="html/1604139244.htm" />
+  <HelpKINode Title="AddFundWindow class" Url="html/224929703.htm" />
+  <HelpKINode Title="AddFundWindow class" Url="html/754439798.htm" />
+  <HelpKINode Title="AddFundWindow class">
+    <HelpKINode Title="about AddFundWindow class" Url="html/754439798.htm" />
+    <HelpKINode Title="all members" Url="html/224929703.htm" />
+    <HelpKINode Title="constructor" Url="html/397454838.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddFundWindow.AddFundWindow constructor" Url="html/397454838.htm" />
+  <HelpKINode Title="AddHospitalDoctorBloodBankWindow class" Url="html/357781078.htm" />
+  <HelpKINode Title="AddHospitalDoctorBloodBankWindow class" Url="html/554922858.htm" />
+  <HelpKINode Title="AddHospitalDoctorBloodBankWindow class">
+    <HelpKINode Title="about AddHospitalDoctorBloodBankWindow class" Url="html/357781078.htm" />
+    <HelpKINode Title="all members" Url="html/554922858.htm" />
+    <HelpKINode Title="constructor" Url="html/509965435.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddHospitalDoctorBloodBankWindow.AddHospitalDoctorBloodBankWindow constructor" Url="html/509965435.htm" />
+  <HelpKINode Title="address property" Url="html/1201103330.htm" />
+  <HelpKINode Title="address property" Url="html/1216045421.htm" />
+  <HelpKINode Title="address property" Url="html/122097168.htm" />
+  <HelpKINode Title="address property" Url="html/1280636353.htm" />
+  <HelpKINode Title="address property" Url="html/790897277.htm" />
+  <HelpKINode Title="AddUpcomingEventWindow class" Url="html/497217752.htm" />
+  <HelpKINode Title="AddUpcomingEventWindow class" Url="html/679215070.htm" />
+  <HelpKINode Title="AddUpcomingEventWindow class">
+    <HelpKINode Title="about AddUpcomingEventWindow class" Url="html/679215070.htm" />
+    <HelpKINode Title="all members" Url="html/497217752.htm" />
+    <HelpKINode Title="constructor" Url="html/1468298868.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddUpcomingEventWindow.AddUpcomingEventWindow constructor" Url="html/1468298868.htm" />
+  <HelpKINode Title="AddWellWisherWindow class" Url="html/1095350019.htm" />
+  <HelpKINode Title="AddWellWisherWindow class" Url="html/2123386926.htm" />
+  <HelpKINode Title="AddWellWisherWindow class">
+    <HelpKINode Title="about AddWellWisherWindow class" Url="html/2123386926.htm" />
+    <HelpKINode Title="all members" Url="html/1095350019.htm" />
+    <HelpKINode Title="constructor" Url="html/166451808.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddWellWisherWindow.AddWellWisherWindow constructor" Url="html/166451808.htm" />
+  <HelpKINode Title="admittedAddress property" Url="html/1242921821.htm" />
+  <HelpKINode Title="age property" Url="html/351084736.htm" />
+  <HelpKINode Title="amount property" Url="html/1628031526.htm" />
+  <HelpKINode Title="amount property" Url="html/691542535.htm" />
+  <HelpKINode Title="App class" Url="html/1523500929.htm" />
+  <HelpKINode Title="App class" Url="html/1549387926.htm" />
+  <HelpKINode Title="App class">
+    <HelpKINode Title="about App class" Url="html/1549387926.htm" />
+    <HelpKINode Title="all members" Url="html/1523500929.htm" />
+    <HelpKINode Title="constructor" Url="html/1975492396.htm" />
+  </HelpKINode>
+  <HelpKINode Title="App.App constructor" Url="html/1975492396.htm" />
+  <HelpKINode Title="AssignDonor class" Url="html/1904918116.htm" />
+  <HelpKINode Title="AssignDonor class" Url="html/71677402.htm" />
+  <HelpKINode Title="AssignDonor class">
+    <HelpKINode Title="about AssignDonor class" Url="html/71677402.htm" />
+    <HelpKINode Title="all members" Url="html/1904918116.htm" />
+    <HelpKINode Title="constructor" Url="html/2028236475.htm" />
+  </HelpKINode>
+  <HelpKINode Title="assignDonor method" Url="html/1440396352.htm" />
+  <HelpKINode Title="AssignDonor.AssignDonor constructor" Url="html/2028236475.htm" />
+  <HelpKINode Title="assignedDonor property" Url="html/244159014.htm" />
+  <HelpKINode Title="BDMS namespace" Url="html/2024174325.htm" />
+  <HelpKINode Title="BDMS.App class" Url="html/1523500929.htm" />
+  <HelpKINode Title="BDMS.App class" Url="html/1549387926.htm" />
+  <HelpKINode Title="BDMS.AssignDonor class" Url="html/1904918116.htm" />
+  <HelpKINode Title="BDMS.AssignDonor class" Url="html/71677402.htm" />
+  <HelpKINode Title="BDMS.MainWindow class" Url="html/1197199445.htm" />
+  <HelpKINode Title="BDMS.MainWindow class" Url="html/869574191.htm" />
+  <HelpKINode Title="BDMS.Properties namespace" Url="html/1374518704.htm" />
+  <HelpKINode Title="BDMS.Properties.Resources class" Url="html/1261866941.htm" />
+  <HelpKINode Title="BDMS.Properties.Resources class" Url="html/745981728.htm" />
+  <HelpKINode Title="BDMS.Properties.Settings class" Url="html/1454237882.htm" />
+  <HelpKINode Title="BDMS.Properties.Settings class" Url="html/209400530.htm" />
+  <HelpKINode Title="BDMS.Testimonial class" Url="html/659644819.htm" />
+  <HelpKINode Title="BDMS.Testimonial class" Url="html/843778043.htm" />
+  <HelpKINode Title="BDMS.Windows namespace" Url="html/1181384237.htm" />
+  <HelpKINode Title="BDMS.Windows.WebSync class" Url="html/1826239306.htm" />
+  <HelpKINode Title="BDMS.Windows.WebSync class" Url="html/361424005.htm" />
+  <HelpKINode Title="BDMSData namespace" Url="html/179900518.htm" />
+  <HelpKINode Title="BDMSData.DonorInfo class" Url="html/225608418.htm" />
+  <HelpKINode Title="BDMSData.DonorInfo class" Url="html/640540822.htm" />
+  <HelpKINode Title="BDMSData.EventInfo class" Url="html/1434160672.htm" />
+  <HelpKINode Title="BDMSData.EventInfo class" Url="html/1989451678.htm" />
+  <HelpKINode Title="BDMSData.ExpenseInfo class" Url="html/1862852241.htm" />
+  <HelpKINode Title="BDMSData.ExpenseInfo class" Url="html/712298556.htm" />
+  <HelpKINode Title="BDMSData.FundInfo class" Url="html/537256371.htm" />
+  <HelpKINode Title="BDMSData.FundInfo class" Url="html/682713395.htm" />
+  <HelpKINode Title="BDMSData.HdbbInfo class" Url="html/2136987031.htm" />
+  <HelpKINode Title="BDMSData.HdbbInfo class" Url="html/364392892.htm" />
+  <HelpKINode Title="BDMSData.MemberInfo class" Url="html/1434671610.htm" />
+  <HelpKINode Title="BDMSData.MemberInfo class" Url="html/201429405.htm" />
+  <HelpKINode Title="BDMSData.PatientInfo class" Url="html/445293397.htm" />
+  <HelpKINode Title="BDMSData.PatientInfo class" Url="html/974312110.htm" />
+  <HelpKINode Title="BDMSData.TodoInfo class" Url="html/4704037.htm" />
+  <HelpKINode Title="BDMSData.TodoInfo class" Url="html/758857665.htm" />
+  <HelpKINode Title="BDMSData.WellWisherInfo class" Url="html/1353341184.htm" />
+  <HelpKINode Title="BDMSData.WellWisherInfo class" Url="html/1404342244.htm" />
+  <HelpKINode Title="BDMSDb namespace" Url="html/1207745165.htm" />
+  <HelpKINode Title="BDMSDb.DbInteraction class" Url="html/749342228.htm" />
+  <HelpKINode Title="BDMSDb.DbInteraction class" Url="html/898329975.htm" />
+  <HelpKINode Title="bloodGroup property" Url="html/2019740433.htm" />
+  <HelpKINode Title="bloodGroup property" Url="html/830605.htm" />
+  <HelpKINode Title="ChangePasswordWindow class" Url="html/1693656901.htm" />
+  <HelpKINode Title="ChangePasswordWindow class" Url="html/1722405545.htm" />
+  <HelpKINode Title="ChangePasswordWindow class">
+    <HelpKINode Title="about ChangePasswordWindow class" Url="html/1693656901.htm" />
+    <HelpKINode Title="all members" Url="html/1722405545.htm" />
+    <HelpKINode Title="constructor" Url="html/1461361125.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ChangePasswordWindow.ChangePasswordWindow constructor" Url="html/1461361125.htm" />
+  <HelpKINode Title="contact property" Url="html/595235046.htm" />
+  <HelpKINode Title="CreateAccountWindow class" Url="html/656167236.htm" />
+  <HelpKINode Title="CreateAccountWindow class" Url="html/721864157.htm" />
+  <HelpKINode Title="CreateAccountWindow class">
+    <HelpKINode Title="about CreateAccountWindow class" Url="html/656167236.htm" />
+    <HelpKINode Title="all members" Url="html/721864157.htm" />
+    <HelpKINode Title="constructor" Url="html/437149467.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CreateAccountWindow.CreateAccountWindow constructor" Url="html/437149467.htm" />
+  <HelpKINode Title="Culture property" Url="html/1453188974.htm" />
+  <HelpKINode Title="date property" Url="html/668257963.htm" />
+  <HelpKINode Title="DbInteraction class" Url="html/749342228.htm" />
+  <HelpKINode Title="DbInteraction class" Url="html/898329975.htm" />
+  <HelpKINode Title="DbInteraction class">
+    <HelpKINode Title="about DbInteraction class" Url="html/898329975.htm" />
+    <HelpKINode Title="all members" Url="html/749342228.htm" />
+    <HelpKINode Title="fields" Url="html/191834611.htm" />
+    <HelpKINode Title="methods" Url="html/1256622465.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DbInteraction.assignDonor method" Url="html/1440396352.htm" />
+  <HelpKINode Title="DbInteraction.dbmsCurrent field" Url="html/1304125346.htm" />
+  <HelpKINode Title="DbInteraction.DeleteDonor method" Url="html/1737854372.htm" />
+  <HelpKINode Title="DbInteraction.DeleteEvent method" Url="html/583051886.htm" />
+  <HelpKINode Title="DbInteraction.DeleteExpense method" Url="html/676594227.htm" />
+  <HelpKINode Title="DbInteraction.DeleteFund method" Url="html/812943867.htm" />
+  <HelpKINode Title="DbInteraction.DeleteHdbb method" Url="html/1159416242.htm" />
+  <HelpKINode Title="DbInteraction.DeleteMember method" Url="html/1513923194.htm" />
+  <HelpKINode Title="DbInteraction.DeletePatient method" Url="html/609298850.htm" />
+  <HelpKINode Title="DbInteraction.DeleteTodo method" Url="html/354127556.htm" />
+  <HelpKINode Title="DbInteraction.DeleteWellWisher method" Url="html/1332897825.htm" />
+  <HelpKINode Title="DbInteraction.DoRegisterNewDonor method" Url="html/1699022814.htm" />
+  <HelpKINode Title="DbInteraction.DoRegisterNewDonorInDb method" Url="html/665651148.htm" />
+  <HelpKINode Title="DbInteraction.DoRegisterNewEvent method" Url="html/1293101769.htm" />
+  <HelpKINode Title="DbInteraction.DoRegisterNewEventInDb method" Url="html/1572691447.htm" />
+  <HelpKINode Title="DbInteraction.DoRegisterNewExpense method" Url="html/1678049081.htm" />
+  <HelpKINode Title="DbInteraction.DoRegisterNewExpenseInDb method" Url="html/2071542138.htm" />
+  <HelpKINode Title="DbInteraction.DoRegisterNewFund method" Url="html/2123514080.htm" />
+  <HelpKINode Title="DbInteraction.DoRegisterNewFundInDb method" Url="html/1192338977.htm" />
+  <HelpKINode Title="DbInteraction.DoRegisterNewHdbb method" Url="html/2029352124.htm" />
+  <HelpKINode Title="DbInteraction.DoRegisterNewHdbbInDb method" Url="html/1555448726.htm" />
+  <HelpKINode Title="DbInteraction.DoRegisterNewMember method" Url="html/148750473.htm" />
+  <HelpKINode Title="DbInteraction.DoRegisterNewMemberInDb method" Url="html/1896750871.htm" />
+  <HelpKINode Title="DbInteraction.DoRegisterNewPatientInDb method" Url="html/152908150.htm" />
+  <HelpKINode Title="DbInteraction.DoRegisterNewTodo method" Url="html/1626010231.htm" />
+  <HelpKINode Title="DbInteraction.DoRegisterNewTodoInDb method" Url="html/520584732.htm" />
+  <HelpKINode Title="DbInteraction.DoRegisterPatient method" Url="html/891004753.htm" />
+  <HelpKINode Title="DbInteraction.DoRegisterWellWisher method" Url="html/1244184400.htm" />
+  <HelpKINode Title="DbInteraction.DoRegisterWellWisherInDb method" Url="html/953670326.htm" />
+  <HelpKINode Title="DbInteraction.DoSearchAllMemberList method" Url="html/881435595.htm" />
+  <HelpKINode Title="DbInteraction.EditDonor method" Url="html/544473334.htm" />
+  <HelpKINode Title="DbInteraction.EditEvent method" Url="html/1503611103.htm" />
+  <HelpKINode Title="DbInteraction.EditExpense method" Url="html/2054918771.htm" />
+  <HelpKINode Title="DbInteraction.EditFund method" Url="html/1172354788.htm" />
+  <HelpKINode Title="DbInteraction.EditHdbb method" Url="html/1810357852.htm" />
+  <HelpKINode Title="DbInteraction.EditMember method" Url="html/1774307914.htm" />
+  <HelpKINode Title="DbInteraction.EditPatient method" Url="html/1995058613.htm" />
+  <HelpKINode Title="DbInteraction.EditWellWisher method" Url="html/574940955.htm" />
+  <HelpKINode Title="DbInteraction.GetAllDonorList method" Url="html/1579347154.htm" />
+  <HelpKINode Title="DbInteraction.GetAllEventList method" Url="html/1895739748.htm" />
+  <HelpKINode Title="DbInteraction.GetAllExpenseList method" Url="html/42108262.htm" />
+  <HelpKINode Title="DbInteraction.GetAllFundList method" Url="html/18801493.htm" />
+  <HelpKINode Title="DbInteraction.GetAllHdbbList method" Url="html/664683258.htm" />
+  <HelpKINode Title="DbInteraction.GetAllMemberList method" Url="html/1325509458.htm" />
+  <HelpKINode Title="DbInteraction.GetAllPatientList method" Url="html/1777253602.htm" />
+  <HelpKINode Title="DbInteraction.GetAllPatientListWithAssignedDonor method" Url="html/2099448781.htm" />
+  <HelpKINode Title="DbInteraction.GetAllTodoList method" Url="html/398984294.htm" />
+  <HelpKINode Title="DbInteraction.GetAllWellWisherList method" Url="html/837081872.htm" />
+  <HelpKINode Title="DbInteraction.getDonorInfo method" Url="html/767175938.htm" />
+  <HelpKINode Title="DbInteraction.OpenDbConnection method" Url="html/1614530119.htm" />
+  <HelpKINode Title="DbInteraction.passwordCurrent field" Url="html/1481227045.htm" />
+  <HelpKINode Title="DbInteraction.QueryAllDonorList method" Url="html/650716386.htm" />
+  <HelpKINode Title="DbInteraction.QueryAllEventList method" Url="html/546773814.htm" />
+  <HelpKINode Title="DbInteraction.QueryAllExpenseList method" Url="html/705418486.htm" />
+  <HelpKINode Title="DbInteraction.QueryAllFundList method" Url="html/583828785.htm" />
+  <HelpKINode Title="DbInteraction.QueryAllHdbbList method" Url="html/215393524.htm" />
+  <HelpKINode Title="DbInteraction.QueryAllMemberList method" Url="html/1842112998.htm" />
+  <HelpKINode Title="DbInteraction.QueryAllPatientList method" Url="html/1446169456.htm" />
+  <HelpKINode Title="DbInteraction.QueryAllTodoList method" Url="html/2098656386.htm" />
+  <HelpKINode Title="DbInteraction.QueryAllWellWisherList method" Url="html/1462506151.htm" />
+  <HelpKINode Title="DbInteraction.SearchAllDonorList method" Url="html/295020494.htm" />
+  <HelpKINode Title="DbInteraction.SearchAllDonorListDetails method" Url="html/360350581.htm" />
+  <HelpKINode Title="DbInteraction.SearchAllFundList method" Url="html/1081163617.htm" />
+  <HelpKINode Title="DbInteraction.SearchAllMemberList method" Url="html/1795206290.htm" />
+  <HelpKINode Title="DbInteraction.SearchAllPatientList method" Url="html/895906488.htm" />
+  <HelpKINode Title="DbInteraction.SearchAllTodoList method" Url="html/1421253029.htm" />
+  <HelpKINode Title="DbInteraction.SearchAllWellWisherList method" Url="html/883729863.htm" />
+  <HelpKINode Title="DbInteraction.SrchAllPatientList method" Url="html/316523753.htm" />
+  <HelpKINode Title="dbmsCurrent field" Url="html/1304125346.htm" />
+  <HelpKINode Title="Default property" Url="html/2025799537.htm" />
+  <HelpKINode Title="defaultInstance field" Url="html/1547671924.htm" />
+  <HelpKINode Title="DeleteDonor method" Url="html/1737854372.htm" />
+  <HelpKINode Title="DeleteEvent method" Url="html/583051886.htm" />
+  <HelpKINode Title="DeleteExpense method" Url="html/676594227.htm" />
+  <HelpKINode Title="DeleteFund method" Url="html/812943867.htm" />
+  <HelpKINode Title="DeleteHdbb method" Url="html/1159416242.htm" />
+  <HelpKINode Title="DeleteMember method" Url="html/1513923194.htm" />
+  <HelpKINode Title="DeletePatient method" Url="html/609298850.htm" />
+  <HelpKINode Title="DeleteTodo method" Url="html/354127556.htm" />
+  <HelpKINode Title="DeleteWellWisher method" Url="html/1332897825.htm" />
+  <HelpKINode Title="details property" Url="html/1736587417.htm" />
+  <HelpKINode Title="dob property" Url="html/915323362.htm" />
+  <HelpKINode Title="dod property" Url="html/658657089.htm" />
+  <HelpKINode Title="doe property" Url="html/1021916485.htm" />
+  <HelpKINode Title="doj property" Url="html/2003474729.htm" />
+  <HelpKINode Title="doj property" Url="html/2109838800.htm" />
+  <HelpKINode Title="DonorAssignmentDetails class" Url="html/1986680778.htm" />
+  <HelpKINode Title="DonorAssignmentDetails class" Url="html/585709987.htm" />
+  <HelpKINode Title="DonorAssignmentDetails class">
+    <HelpKINode Title="about DonorAssignmentDetails class" Url="html/585709987.htm" />
+    <HelpKINode Title="all members" Url="html/1986680778.htm" />
+    <HelpKINode Title="constructor" Url="html/777909578.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DonorAssignmentDetails namespace" Url="html/2051470991.htm" />
+  <HelpKINode Title="DonorAssignmentDetails.DonorAssignmentDetails class" Url="html/1986680778.htm" />
+  <HelpKINode Title="DonorAssignmentDetails.DonorAssignmentDetails class" Url="html/585709987.htm" />
+  <HelpKINode Title="DonorAssignmentDetails.DonorAssignmentDetails constructor" Url="html/777909578.htm" />
+  <HelpKINode Title="donorContact property" Url="html/654962144.htm" />
+  <HelpKINode Title="DonorDetailsWindow class" Url="html/1337571621.htm" />
+  <HelpKINode Title="DonorDetailsWindow class" Url="html/604300652.htm" />
+  <HelpKINode Title="DonorDetailsWindow class">
+    <HelpKINode Title="about DonorDetailsWindow class" Url="html/604300652.htm" />
+    <HelpKINode Title="all members" Url="html/1337571621.htm" />
+    <HelpKINode Title="constructor" Url="html/50702498.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DonorDetailsWindow.DonorDetailsWindow constructor" Url="html/50702498.htm" />
+  <HelpKINode Title="DonorInfo class" Url="html/225608418.htm" />
+  <HelpKINode Title="DonorInfo class" Url="html/640540822.htm" />
+  <HelpKINode Title="DonorInfo class">
+    <HelpKINode Title="about DonorInfo class" Url="html/225608418.htm" />
+    <HelpKINode Title="all members" Url="html/640540822.htm" />
+    <HelpKINode Title="properties" Url="html/1193975154.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DonorInfo.address property" Url="html/790897277.htm" />
+  <HelpKINode Title="DonorInfo.bloodGroup property" Url="html/2019740433.htm" />
+  <HelpKINode Title="DonorInfo.dob property" Url="html/915323362.htm" />
+  <HelpKINode Title="DonorInfo.id property" Url="html/1709601499.htm" />
+  <HelpKINode Title="DonorInfo.lastDonateDate property" Url="html/495377640.htm" />
+  <HelpKINode Title="DonorInfo.name property" Url="html/1939325581.htm" />
+  <HelpKINode Title="DonorInfo.phone property" Url="html/727209697.htm" />
+  <HelpKINode Title="Donors namespace" Url="html/1041974056.htm" />
+  <HelpKINode Title="Donors.DonorDetailsWindow class" Url="html/1337571621.htm" />
+  <HelpKINode Title="Donors.DonorDetailsWindow class" Url="html/604300652.htm" />
+  <HelpKINode Title="Donors.DonorsWindow class" Url="html/590188998.htm" />
+  <HelpKINode Title="Donors.DonorsWindow class" Url="html/701254262.htm" />
+  <HelpKINode Title="DonorsWindow class" Url="html/590188998.htm" />
+  <HelpKINode Title="DonorsWindow class" Url="html/701254262.htm" />
+  <HelpKINode Title="DonorsWindow class">
+    <HelpKINode Title="about DonorsWindow class" Url="html/590188998.htm" />
+    <HelpKINode Title="all members" Url="html/701254262.htm" />
+    <HelpKINode Title="constructor" Url="html/1302141812.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DonorsWindow.DonorsWindow constructor" Url="html/1302141812.htm" />
+  <HelpKINode Title="DoRegisterNewDonor method" Url="html/1699022814.htm" />
+  <HelpKINode Title="DoRegisterNewDonorInDb method" Url="html/665651148.htm" />
+  <HelpKINode Title="DoRegisterNewEvent method" Url="html/1293101769.htm" />
+  <HelpKINode Title="DoRegisterNewEventInDb method" Url="html/1572691447.htm" />
+  <HelpKINode Title="DoRegisterNewExpense method" Url="html/1678049081.htm" />
+  <HelpKINode Title="DoRegisterNewExpenseInDb method" Url="html/2071542138.htm" />
+  <HelpKINode Title="DoRegisterNewFund method" Url="html/2123514080.htm" />
+  <HelpKINode Title="DoRegisterNewFundInDb method" Url="html/1192338977.htm" />
+  <HelpKINode Title="DoRegisterNewHdbb method" Url="html/2029352124.htm" />
+  <HelpKINode Title="DoRegisterNewHdbbInDb method" Url="html/1555448726.htm" />
+  <HelpKINode Title="DoRegisterNewMember method" Url="html/148750473.htm" />
+  <HelpKINode Title="DoRegisterNewMemberInDb method" Url="html/1896750871.htm" />
+  <HelpKINode Title="DoRegisterNewPatientInDb method" Url="html/152908150.htm" />
+  <HelpKINode Title="DoRegisterNewTodo method" Url="html/1626010231.htm" />
+  <HelpKINode Title="DoRegisterNewTodoInDb method" Url="html/520584732.htm" />
+  <HelpKINode Title="DoRegisterPatient method" Url="html/891004753.htm" />
+  <HelpKINode Title="DoRegisterWellWisher method" Url="html/1244184400.htm" />
+  <HelpKINode Title="DoRegisterWellWisherInDb method" Url="html/953670326.htm" />
+  <HelpKINode Title="DoSearchAllMemberList method" Url="html/881435595.htm" />
+  <HelpKINode Title="EditDonor method" Url="html/544473334.htm" />
+  <HelpKINode Title="EditEvent method" Url="html/1503611103.htm" />
+  <HelpKINode Title="EditExpense method" Url="html/2054918771.htm" />
+  <HelpKINode Title="EditFund method" Url="html/1172354788.htm" />
+  <HelpKINode Title="EditHdbb method" Url="html/1810357852.htm" />
+  <HelpKINode Title="EditMember method" Url="html/1774307914.htm" />
+  <HelpKINode Title="EditPatient method" Url="html/1995058613.htm" />
+  <HelpKINode Title="EditWellWisher method" Url="html/574940955.htm" />
+  <HelpKINode Title="eventDoe property" Url="html/559955755.htm" />
+  <HelpKINode Title="eventGoal property" Url="html/1004293182.htm" />
+  <HelpKINode Title="EventInfo class" Url="html/1434160672.htm" />
+  <HelpKINode Title="EventInfo class" Url="html/1989451678.htm" />
+  <HelpKINode Title="EventInfo class">
+    <HelpKINode Title="about EventInfo class" Url="html/1989451678.htm" />
+    <HelpKINode Title="all members" Url="html/1434160672.htm" />
+    <HelpKINode Title="properties" Url="html/2030449476.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EventInfo.eventDoe property" Url="html/559955755.htm" />
+  <HelpKINode Title="EventInfo.eventGoal property" Url="html/1004293182.htm" />
+  <HelpKINode Title="EventInfo.eventTitle property" Url="html/130814053.htm" />
+  <HelpKINode Title="EventInfo.eventVenue property" Url="html/457526535.htm" />
+  <HelpKINode Title="EventInfo.id property" Url="html/1784612483.htm" />
+  <HelpKINode Title="Events namespace" Url="html/1647262518.htm" />
+  <HelpKINode Title="Events.AddUpcomingEventWindow class" Url="html/497217752.htm" />
+  <HelpKINode Title="Events.AddUpcomingEventWindow class" Url="html/679215070.htm" />
+  <HelpKINode Title="Events.EventsWindow class" Url="html/1663104579.htm" />
+  <HelpKINode Title="Events.EventsWindow class" Url="html/1669310011.htm" />
+  <HelpKINode Title="Events.PreviousEventsWindow class" Url="html/1180463479.htm" />
+  <HelpKINode Title="Events.PreviousEventsWindow class" Url="html/2123688387.htm" />
+  <HelpKINode Title="EventsWindow class" Url="html/1663104579.htm" />
+  <HelpKINode Title="EventsWindow class" Url="html/1669310011.htm" />
+  <HelpKINode Title="EventsWindow class">
+    <HelpKINode Title="about EventsWindow class" Url="html/1669310011.htm" />
+    <HelpKINode Title="all members" Url="html/1663104579.htm" />
+    <HelpKINode Title="constructor" Url="html/20837492.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EventsWindow.EventsWindow constructor" Url="html/20837492.htm" />
+  <HelpKINode Title="eventTitle property" Url="html/130814053.htm" />
+  <HelpKINode Title="eventVenue property" Url="html/457526535.htm" />
+  <HelpKINode Title="expectedDate property" Url="html/1224486567.htm" />
+  <HelpKINode Title="expensed_by property" Url="html/582449274.htm" />
+  <HelpKINode Title="ExpenseInfo class" Url="html/1862852241.htm" />
+  <HelpKINode Title="ExpenseInfo class" Url="html/712298556.htm" />
+  <HelpKINode Title="ExpenseInfo class">
+    <HelpKINode Title="about ExpenseInfo class" Url="html/712298556.htm" />
+    <HelpKINode Title="all members" Url="html/1862852241.htm" />
+    <HelpKINode Title="properties" Url="html/89758840.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExpenseInfo.amount property" Url="html/1628031526.htm" />
+  <HelpKINode Title="ExpenseInfo.doe property" Url="html/1021916485.htm" />
+  <HelpKINode Title="ExpenseInfo.expensed_by property" Url="html/582449274.htm" />
+  <HelpKINode Title="ExpenseInfo.id property" Url="html/1353659728.htm" />
+  <HelpKINode Title="ExpenseInfo.purpose property" Url="html/2076825342.htm" />
+  <HelpKINode Title="ExpenseWindow class" Url="html/221364565.htm" />
+  <HelpKINode Title="ExpenseWindow class" Url="html/752288838.htm" />
+  <HelpKINode Title="ExpenseWindow class">
+    <HelpKINode Title="about ExpenseWindow class" Url="html/752288838.htm" />
+    <HelpKINode Title="all members" Url="html/221364565.htm" />
+    <HelpKINode Title="constructor" Url="html/1477423242.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExpenseWindow.ExpenseWindow constructor" Url="html/1477423242.htm" />
+  <HelpKINode Title="FundInfo class" Url="html/537256371.htm" />
+  <HelpKINode Title="FundInfo class" Url="html/682713395.htm" />
+  <HelpKINode Title="FundInfo class">
+    <HelpKINode Title="about FundInfo class" Url="html/682713395.htm" />
+    <HelpKINode Title="all members" Url="html/537256371.htm" />
+    <HelpKINode Title="properties" Url="html/993090267.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FundInfo.amount property" Url="html/691542535.htm" />
+  <HelpKINode Title="FundInfo.contact property" Url="html/595235046.htm" />
+  <HelpKINode Title="FundInfo.dod property" Url="html/658657089.htm" />
+  <HelpKINode Title="FundInfo.id property" Url="html/127112363.htm" />
+  <HelpKINode Title="FundInfo.received_by property" Url="html/1932859190.htm" />
+  <HelpKINode Title="FundInfo.wellwisher_name property" Url="html/1931235741.htm" />
+  <HelpKINode Title="Funds namespace" Url="html/596436901.htm" />
+  <HelpKINode Title="Funds.AddExpenseWindow class" Url="html/1188482100.htm" />
+  <HelpKINode Title="Funds.AddExpenseWindow class" Url="html/2073386125.htm" />
+  <HelpKINode Title="Funds.AddFundWindow class" Url="html/224929703.htm" />
+  <HelpKINode Title="Funds.AddFundWindow class" Url="html/754439798.htm" />
+  <HelpKINode Title="Funds.ExpenseWindow class" Url="html/221364565.htm" />
+  <HelpKINode Title="Funds.ExpenseWindow class" Url="html/752288838.htm" />
+  <HelpKINode Title="Funds.FundsWindow class" Url="html/1938894609.htm" />
+  <HelpKINode Title="Funds.FundsWindow class" Url="html/1974346886.htm" />
+  <HelpKINode Title="FundsWindow class" Url="html/1938894609.htm" />
+  <HelpKINode Title="FundsWindow class" Url="html/1974346886.htm" />
+  <HelpKINode Title="FundsWindow class">
+    <HelpKINode Title="about FundsWindow class" Url="html/1938894609.htm" />
+    <HelpKINode Title="all members" Url="html/1974346886.htm" />
+    <HelpKINode Title="constructor" Url="html/1662307941.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FundsWindow.FundsWindow constructor" Url="html/1662307941.htm" />
+  <HelpKINode Title="GetAllDonorList method" Url="html/1579347154.htm" />
+  <HelpKINode Title="GetAllEventList method" Url="html/1895739748.htm" />
+  <HelpKINode Title="GetAllExpenseList method" Url="html/42108262.htm" />
+  <HelpKINode Title="GetAllFundList method" Url="html/18801493.htm" />
+  <HelpKINode Title="GetAllHdbbList method" Url="html/664683258.htm" />
+  <HelpKINode Title="GetAllMemberList method" Url="html/1325509458.htm" />
+  <HelpKINode Title="GetAllPatientList method" Url="html/1777253602.htm" />
+  <HelpKINode Title="GetAllPatientListWithAssignedDonor method" Url="html/2099448781.htm" />
+  <HelpKINode Title="GetAllTodoList method" Url="html/398984294.htm" />
+  <HelpKINode Title="GetAllWellWisherList method" Url="html/837081872.htm" />
+  <HelpKINode Title="getDonorInfo method" Url="html/767175938.htm" />
+  <HelpKINode Title="HdbbInfo class" Url="html/2136987031.htm" />
+  <HelpKINode Title="HdbbInfo class" Url="html/364392892.htm" />
+  <HelpKINode Title="HdbbInfo class">
+    <HelpKINode Title="about HdbbInfo class" Url="html/364392892.htm" />
+    <HelpKINode Title="all members" Url="html/2136987031.htm" />
+    <HelpKINode Title="properties" Url="html/894934247.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HdbbInfo.address property" Url="html/1280636353.htm" />
+  <HelpKINode Title="HdbbInfo.id property" Url="html/1008822536.htm" />
+  <HelpKINode Title="HdbbInfo.name property" Url="html/2136692456.htm" />
+  <HelpKINode Title="HdbbInfo.phone property" Url="html/1792678345.htm" />
+  <HelpKINode Title="HdbbInfo.type property" Url="html/1493392597.htm" />
+  <HelpKINode Title="Help namespace" Url="html/887553758.htm" />
+  <HelpKINode Title="Help.AddHospitalDoctorBloodBankWindow class" Url="html/357781078.htm" />
+  <HelpKINode Title="Help.AddHospitalDoctorBloodBankWindow class" Url="html/554922858.htm" />
+  <HelpKINode Title="Help.ChangePasswordWindow class" Url="html/1693656901.htm" />
+  <HelpKINode Title="Help.ChangePasswordWindow class" Url="html/1722405545.htm" />
+  <HelpKINode Title="Help.HelpWindow class" Url="html/1367707924.htm" />
+  <HelpKINode Title="Help.HelpWindow class" Url="html/2130490873.htm" />
+  <HelpKINode Title="Help.HospitalDoctorBloodBankWindow class" Url="html/1280224057.htm" />
+  <HelpKINode Title="Help.HospitalDoctorBloodBankWindow class" Url="html/1838490634.htm" />
+  <HelpKINode Title="HelpWindow class" Url="html/1367707924.htm" />
+  <HelpKINode Title="HelpWindow class" Url="html/2130490873.htm" />
+  <HelpKINode Title="HelpWindow class">
+    <HelpKINode Title="about HelpWindow class" Url="html/1367707924.htm" />
+    <HelpKINode Title="all members" Url="html/2130490873.htm" />
+    <HelpKINode Title="constructor" Url="html/166426009.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HelpWindow.HelpWindow constructor" Url="html/166426009.htm" />
+  <HelpKINode Title="HospitalDoctorBloodBankWindow class" Url="html/1280224057.htm" />
+  <HelpKINode Title="HospitalDoctorBloodBankWindow class" Url="html/1838490634.htm" />
+  <HelpKINode Title="HospitalDoctorBloodBankWindow class">
+    <HelpKINode Title="about HospitalDoctorBloodBankWindow class" Url="html/1280224057.htm" />
+    <HelpKINode Title="all members" Url="html/1838490634.htm" />
+    <HelpKINode Title="constructor" Url="html/243972403.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HospitalDoctorBloodBankWindow.HospitalDoctorBloodBankWindow constructor" Url="html/243972403.htm" />
+  <HelpKINode Title="id property" Url="html/1008822536.htm" />
+  <HelpKINode Title="id property" Url="html/1130758938.htm" />
+  <HelpKINode Title="id property" Url="html/1175838525.htm" />
+  <HelpKINode Title="id property" Url="html/127112363.htm" />
+  <HelpKINode Title="id property" Url="html/1353659728.htm" />
+  <HelpKINode Title="id property" Url="html/145336969.htm" />
+  <HelpKINode Title="id property" Url="html/1709601499.htm" />
+  <HelpKINode Title="id property" Url="html/1784612483.htm" />
+  <HelpKINode Title="id property" Url="html/789169618.htm" />
+  <HelpKINode Title="lastDonateDate property" Url="html/495377640.htm" />
+  <HelpKINode Title="Login namespace" Url="html/639133987.htm" />
+  <HelpKINode Title="Login.CreateAccountWindow class" Url="html/656167236.htm" />
+  <HelpKINode Title="Login.CreateAccountWindow class" Url="html/721864157.htm" />
+  <HelpKINode Title="Login.LoginWindow class" Url="html/176042463.htm" />
+  <HelpKINode Title="Login.LoginWindow class" Url="html/1796662074.htm" />
+  <HelpKINode Title="Login.LoginWindow.delegateOnSucccesfulLogin delegate" Url="html/577006567.htm" />
+  <HelpKINode Title="LoginWindow class" Url="html/176042463.htm" />
+  <HelpKINode Title="LoginWindow class" Url="html/1796662074.htm" />
+  <HelpKINode Title="LoginWindow class">
+    <HelpKINode Title="about LoginWindow class" Url="html/1796662074.htm" />
+    <HelpKINode Title="all members" Url="html/176042463.htm" />
+    <HelpKINode Title="constructor" Url="html/1177111352.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LoginWindow.delegateOnSucccesfulLogin delegate" Url="html/577006567.htm" />
+  <HelpKINode Title="LoginWindow.LoginWindow constructor" Url="html/1177111352.htm" />
+  <HelpKINode Title="MainWindow class" Url="html/1197199445.htm" />
+  <HelpKINode Title="MainWindow class" Url="html/869574191.htm" />
+  <HelpKINode Title="MainWindow class">
+    <HelpKINode Title="about MainWindow class" Url="html/1197199445.htm" />
+    <HelpKINode Title="all members" Url="html/869574191.htm" />
+    <HelpKINode Title="constructor" Url="html/1541462862.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MainWindow.MainWindow constructor" Url="html/1541462862.htm" />
+  <HelpKINode Title="MemberDetailsWindow class" Url="html/1184398509.htm" />
+  <HelpKINode Title="MemberDetailsWindow class" Url="html/903838481.htm" />
+  <HelpKINode Title="MemberDetailsWindow class">
+    <HelpKINode Title="about MemberDetailsWindow class" Url="html/903838481.htm" />
+    <HelpKINode Title="all members" Url="html/1184398509.htm" />
+    <HelpKINode Title="constructor" Url="html/2085354072.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MemberDetailsWindow.MemberDetailsWindow constructor" Url="html/2085354072.htm" />
+  <HelpKINode Title="MemberInfo class" Url="html/1434671610.htm" />
+  <HelpKINode Title="MemberInfo class" Url="html/201429405.htm" />
+  <HelpKINode Title="MemberInfo class">
+    <HelpKINode Title="about MemberInfo class" Url="html/1434671610.htm" />
+    <HelpKINode Title="all members" Url="html/201429405.htm" />
+    <HelpKINode Title="properties" Url="html/1769140939.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MemberInfo.address property" Url="html/1201103330.htm" />
+  <HelpKINode Title="MemberInfo.doj property" Url="html/2003474729.htm" />
+  <HelpKINode Title="MemberInfo.id property" Url="html/789169618.htm" />
+  <HelpKINode Title="MemberInfo.name property" Url="html/852633402.htm" />
+  <HelpKINode Title="MemberInfo.phone property" Url="html/1807828492.htm" />
+  <HelpKINode Title="Members namespace" Url="html/683128293.htm" />
+  <HelpKINode Title="Members.MemberDetailsWindow class" Url="html/1184398509.htm" />
+  <HelpKINode Title="Members.MemberDetailsWindow class" Url="html/903838481.htm" />
+  <HelpKINode Title="Members.MembersWindow class" Url="html/1133886311.htm" />
+  <HelpKINode Title="Members.MembersWindow class" Url="html/288771610.htm" />
+  <HelpKINode Title="MembersWindow class" Url="html/1133886311.htm" />
+  <HelpKINode Title="MembersWindow class" Url="html/288771610.htm" />
+  <HelpKINode Title="MembersWindow class">
+    <HelpKINode Title="about MembersWindow class" Url="html/288771610.htm" />
+    <HelpKINode Title="all members" Url="html/1133886311.htm" />
+    <HelpKINode Title="constructor" Url="html/1919917746.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MembersWindow.MembersWindow constructor" Url="html/1919917746.htm" />
+  <HelpKINode Title="name property" Url="html/1002953267.htm" />
+  <HelpKINode Title="name property" Url="html/1855248279.htm" />
+  <HelpKINode Title="name property" Url="html/1939325581.htm" />
+  <HelpKINode Title="name property" Url="html/2136692456.htm" />
+  <HelpKINode Title="name property" Url="html/852633402.htm" />
+  <HelpKINode Title="OpenDbConnection method" Url="html/1614530119.htm" />
+  <HelpKINode Title="passwordCurrent field" Url="html/1481227045.htm" />
+  <HelpKINode Title="PatientInfo class" Url="html/445293397.htm" />
+  <HelpKINode Title="PatientInfo class" Url="html/974312110.htm" />
+  <HelpKINode Title="PatientInfo class">
+    <HelpKINode Title="about PatientInfo class" Url="html/445293397.htm" />
+    <HelpKINode Title="all members" Url="html/974312110.htm" />
+    <HelpKINode Title="properties" Url="html/1578566244.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PatientInfo.address property" Url="html/1216045421.htm" />
+  <HelpKINode Title="PatientInfo.admittedAddress property" Url="html/1242921821.htm" />
+  <HelpKINode Title="PatientInfo.age property" Url="html/351084736.htm" />
+  <HelpKINode Title="PatientInfo.assignedDonor property" Url="html/244159014.htm" />
+  <HelpKINode Title="PatientInfo.bloodGroup property" Url="html/830605.htm" />
+  <HelpKINode Title="PatientInfo.donorContact property" Url="html/654962144.htm" />
+  <HelpKINode Title="PatientInfo.expectedDate property" Url="html/1224486567.htm" />
+  <HelpKINode Title="PatientInfo.id property" Url="html/1175838525.htm" />
+  <HelpKINode Title="PatientInfo.name property" Url="html/1855248279.htm" />
+  <HelpKINode Title="PatientInfo.phone property" Url="html/468867247.htm" />
+  <HelpKINode Title="Patients namespace" Url="html/1464008236.htm" />
+  <HelpKINode Title="Patients.PatientsWindow class" Url="html/150511701.htm" />
+  <HelpKINode Title="Patients.PatientsWindow class" Url="html/196602234.htm" />
+  <HelpKINode Title="Patients.RegistrationForBloodWindow class" Url="html/65161369.htm" />
+  <HelpKINode Title="Patients.RegistrationForBloodWindow class" Url="html/764034253.htm" />
+  <HelpKINode Title="Patients.SearchForBloodWindow class" Url="html/1304591622.htm" />
+  <HelpKINode Title="Patients.SearchForBloodWindow class" Url="html/2016648015.htm" />
+  <HelpKINode Title="PatientsWindow class" Url="html/150511701.htm" />
+  <HelpKINode Title="PatientsWindow class" Url="html/196602234.htm" />
+  <HelpKINode Title="PatientsWindow class">
+    <HelpKINode Title="about PatientsWindow class" Url="html/196602234.htm" />
+    <HelpKINode Title="all members" Url="html/150511701.htm" />
+    <HelpKINode Title="constructor" Url="html/58664558.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PatientsWindow.PatientsWindow constructor" Url="html/58664558.htm" />
+  <HelpKINode Title="phone property" Url="html/1792678345.htm" />
+  <HelpKINode Title="phone property" Url="html/1807828492.htm" />
+  <HelpKINode Title="phone property" Url="html/451999697.htm" />
+  <HelpKINode Title="phone property" Url="html/468867247.htm" />
+  <HelpKINode Title="phone property" Url="html/727209697.htm" />
+  <HelpKINode Title="PreviousEventsWindow class" Url="html/1180463479.htm" />
+  <HelpKINode Title="PreviousEventsWindow class" Url="html/2123688387.htm" />
+  <HelpKINode Title="PreviousEventsWindow class">
+    <HelpKINode Title="about PreviousEventsWindow class" Url="html/1180463479.htm" />
+    <HelpKINode Title="all members" Url="html/2123688387.htm" />
+    <HelpKINode Title="constructor" Url="html/1290593079.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PreviousEventsWindow.PreviousEventsWindow constructor" Url="html/1290593079.htm" />
+  <HelpKINode Title="purpose property" Url="html/2076825342.htm" />
+  <HelpKINode Title="QueryAllDonorList method" Url="html/650716386.htm" />
+  <HelpKINode Title="QueryAllEventList method" Url="html/546773814.htm" />
+  <HelpKINode Title="QueryAllExpenseList method" Url="html/705418486.htm" />
+  <HelpKINode Title="QueryAllFundList method" Url="html/583828785.htm" />
+  <HelpKINode Title="QueryAllHdbbList method" Url="html/215393524.htm" />
+  <HelpKINode Title="QueryAllMemberList method" Url="html/1842112998.htm" />
+  <HelpKINode Title="QueryAllPatientList method" Url="html/1446169456.htm" />
+  <HelpKINode Title="QueryAllTodoList method" Url="html/2098656386.htm" />
+  <HelpKINode Title="QueryAllWellWisherList method" Url="html/1462506151.htm" />
+  <HelpKINode Title="received_by property" Url="html/1932859190.htm" />
+  <HelpKINode Title="RegistrationForBloodWindow class" Url="html/65161369.htm" />
+  <HelpKINode Title="RegistrationForBloodWindow class" Url="html/764034253.htm" />
+  <HelpKINode Title="RegistrationForBloodWindow class">
+    <HelpKINode Title="about RegistrationForBloodWindow class" Url="html/764034253.htm" />
+    <HelpKINode Title="all members" Url="html/65161369.htm" />
+    <HelpKINode Title="constructor" Url="html/1277078837.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RegistrationForBloodWindow.RegistrationForBloodWindow constructor" Url="html/1277078837.htm" />
+  <HelpKINode Title="remarks property" Url="html/1526292545.htm" />
+  <HelpKINode Title="resourceCulture field" Url="html/62647557.htm" />
+  <HelpKINode Title="resourceMan field" Url="html/152563907.htm" />
+  <HelpKINode Title="ResourceManager property" Url="html/946351476.htm" />
+  <HelpKINode Title="Resources class" Url="html/1261866941.htm" />
+  <HelpKINode Title="Resources class" Url="html/745981728.htm" />
+  <HelpKINode Title="Resources class">
+    <HelpKINode Title="about Resources class" Url="html/745981728.htm" />
+    <HelpKINode Title="all members" Url="html/1261866941.htm" />
+    <HelpKINode Title="constructor" Url="html/1287077789.htm" />
+    <HelpKINode Title="fields" Url="html/1380826655.htm" />
+    <HelpKINode Title="properties" Url="html/1592826115.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Resources.Culture property" Url="html/1453188974.htm" />
+  <HelpKINode Title="Resources.resourceCulture field" Url="html/62647557.htm" />
+  <HelpKINode Title="Resources.resourceMan field" Url="html/152563907.htm" />
+  <HelpKINode Title="Resources.ResourceManager property" Url="html/946351476.htm" />
+  <HelpKINode Title="Resources.Resources constructor" Url="html/1287077789.htm" />
+  <HelpKINode Title="SearchAllDonorList method" Url="html/295020494.htm" />
+  <HelpKINode Title="SearchAllDonorListDetails method" Url="html/360350581.htm" />
+  <HelpKINode Title="SearchAllFundList method" Url="html/1081163617.htm" />
+  <HelpKINode Title="SearchAllMemberList method" Url="html/1795206290.htm" />
+  <HelpKINode Title="SearchAllPatientList method" Url="html/895906488.htm" />
+  <HelpKINode Title="SearchAllTodoList method" Url="html/1421253029.htm" />
+  <HelpKINode Title="SearchAllWellWisherList method" Url="html/883729863.htm" />
+  <HelpKINode Title="SearchForBloodWindow class" Url="html/1304591622.htm" />
+  <HelpKINode Title="SearchForBloodWindow class" Url="html/2016648015.htm" />
+  <HelpKINode Title="SearchForBloodWindow class">
+    <HelpKINode Title="about SearchForBloodWindow class" Url="html/2016648015.htm" />
+    <HelpKINode Title="all members" Url="html/1304591622.htm" />
+    <HelpKINode Title="constructor" Url="html/1020269020.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SearchForBloodWindow.SearchForBloodWindow constructor" Url="html/1020269020.htm" />
+  <HelpKINode Title="Settings class" Url="html/1454237882.htm" />
+  <HelpKINode Title="Settings class" Url="html/209400530.htm" />
+  <HelpKINode Title="Settings class">
+    <HelpKINode Title="about Settings class" Url="html/1454237882.htm" />
+    <HelpKINode Title="all members" Url="html/209400530.htm" />
+    <HelpKINode Title="fields" Url="html/2115133836.htm" />
+    <HelpKINode Title="properties" Url="html/113938796.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Settings.Default property" Url="html/2025799537.htm" />
+  <HelpKINode Title="Settings.defaultInstance field" Url="html/1547671924.htm" />
+  <HelpKINode Title="SrchAllPatientList method" Url="html/316523753.htm" />
+  <HelpKINode Title="Testimonial class" Url="html/659644819.htm" />
+  <HelpKINode Title="Testimonial class" Url="html/843778043.htm" />
+  <HelpKINode Title="Testimonial class">
+    <HelpKINode Title="about Testimonial class" Url="html/659644819.htm" />
+    <HelpKINode Title="all members" Url="html/843778043.htm" />
+    <HelpKINode Title="constructor" Url="html/1976862531.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Testimonial.Testimonial constructor" Url="html/1976862531.htm" />
+  <HelpKINode Title="ToDo namespace" Url="html/289526630.htm" />
+  <HelpKINode Title="ToDo.ToDoWindow class" Url="html/293624369.htm" />
+  <HelpKINode Title="ToDo.ToDoWindow class" Url="html/70891054.htm" />
+  <HelpKINode Title="TodoInfo class" Url="html/4704037.htm" />
+  <HelpKINode Title="TodoInfo class" Url="html/758857665.htm" />
+  <HelpKINode Title="TodoInfo class">
+    <HelpKINode Title="about TodoInfo class" Url="html/4704037.htm" />
+    <HelpKINode Title="all members" Url="html/758857665.htm" />
+    <HelpKINode Title="properties" Url="html/1729807993.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TodoInfo.date property" Url="html/668257963.htm" />
+  <HelpKINode Title="TodoInfo.details property" Url="html/1736587417.htm" />
+  <HelpKINode Title="TodoInfo.id property" Url="html/145336969.htm" />
+  <HelpKINode Title="ToDoWindow class" Url="html/293624369.htm" />
+  <HelpKINode Title="ToDoWindow class" Url="html/70891054.htm" />
+  <HelpKINode Title="ToDoWindow class">
+    <HelpKINode Title="about ToDoWindow class" Url="html/70891054.htm" />
+    <HelpKINode Title="all members" Url="html/293624369.htm" />
+    <HelpKINode Title="constructor" Url="html/1813283307.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ToDoWindow.ToDoWindow constructor" Url="html/1813283307.htm" />
+  <HelpKINode Title="type property" Url="html/1493392597.htm" />
+  <HelpKINode Title="WebSync class" Url="html/1826239306.htm" />
+  <HelpKINode Title="WebSync class" Url="html/361424005.htm" />
+  <HelpKINode Title="WebSync class">
+    <HelpKINode Title="about WebSync class" Url="html/1826239306.htm" />
+    <HelpKINode Title="all members" Url="html/361424005.htm" />
+    <HelpKINode Title="constructor" Url="html/1475306787.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WebSync.WebSync constructor" Url="html/1475306787.htm" />
+  <HelpKINode Title="WellWisherInfo class" Url="html/1353341184.htm" />
+  <HelpKINode Title="WellWisherInfo class" Url="html/1404342244.htm" />
+  <HelpKINode Title="WellWisherInfo class">
+    <HelpKINode Title="about WellWisherInfo class" Url="html/1404342244.htm" />
+    <HelpKINode Title="all members" Url="html/1353341184.htm" />
+    <HelpKINode Title="properties" Url="html/765016598.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WellWisherInfo.address property" Url="html/122097168.htm" />
+  <HelpKINode Title="WellWisherInfo.doj property" Url="html/2109838800.htm" />
+  <HelpKINode Title="WellWisherInfo.id property" Url="html/1130758938.htm" />
+  <HelpKINode Title="WellWisherInfo.name property" Url="html/1002953267.htm" />
+  <HelpKINode Title="WellWisherInfo.phone property" Url="html/451999697.htm" />
+  <HelpKINode Title="WellWisherInfo.remarks property" Url="html/1526292545.htm" />
+  <HelpKINode Title="WellWishers namespace" Url="html/1857014915.htm" />
+  <HelpKINode Title="WellWishers.AddWellWisherWindow class" Url="html/1095350019.htm" />
+  <HelpKINode Title="WellWishers.AddWellWisherWindow class" Url="html/2123386926.htm" />
+  <HelpKINode Title="WellWishers.WellWishersWindow class" Url="html/1736907748.htm" />
+  <HelpKINode Title="WellWishers.WellWishersWindow class" Url="html/190800526.htm" />
+  <HelpKINode Title="WellWishersWindow class" Url="html/1736907748.htm" />
+  <HelpKINode Title="WellWishersWindow class" Url="html/190800526.htm" />
+  <HelpKINode Title="WellWishersWindow class">
+    <HelpKINode Title="about WellWishersWindow class" Url="html/1736907748.htm" />
+    <HelpKINode Title="all members" Url="html/190800526.htm" />
+    <HelpKINode Title="constructor" Url="html/1394578351.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WellWishersWindow.WellWishersWindow constructor" Url="html/1394578351.htm" />
+  <HelpKINode Title="wellwisher_name property" Url="html/1931235741.htm" />
+</HelpKI>
