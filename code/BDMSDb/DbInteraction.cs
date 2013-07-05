@@ -8,7 +8,7 @@ namespace BDMSDb
 {
     public static class DbInteraction
     {
-        static string passwordCurrent = "technicise";
+        static string passwordCurrent = "";
         static string dbmsCurrent = "bdmsdb";
 
         private static MySql.Data.MySqlClient.MySqlConnection OpenDbConnection()
